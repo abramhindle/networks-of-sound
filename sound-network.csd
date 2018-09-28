@@ -7,7 +7,7 @@
 </CsOptions>
 <CsInstruments>
 
-sr	=  44100
+sr	=  48000
 ;kr      =  100
 ksmps   =  16
 nchnls	=  2
@@ -137,7 +137,7 @@ FLcolor	180,200,199
 
 
 FLpanel "Network",500,500
-        imin = 0
+        imin = -1
         imax = 1
         islw = 500
         islh = 15
@@ -219,7 +219,8 @@ endin
 
 instr 100
    gai1, gai2 ins
-
+   gai3 delayr 1*kr/sr
+   gai4 delayr 2*kr/sr  
    
       ao0_0 = gai1
    
@@ -233,7 +234,7 @@ instr 100
 
 
    
-      ao1_0 = \
+      ao1_0 = tanh(\
        \
       gkw1_0_0*ao0_0 + \
        \
@@ -242,9 +243,10 @@ instr 100
       gkw1_2_0*ao0_2 + \
        \
       gkw1_3_0*ao0_3  \
-      
+       \
+      )
    
-      ao1_1 = \
+      ao1_1 = tanh(\
        \
       gkw1_0_1*ao0_0 + \
        \
@@ -253,9 +255,10 @@ instr 100
       gkw1_2_1*ao0_2 + \
        \
       gkw1_3_1*ao0_3  \
-      
+       \
+      )
    
-      ao1_2 = \
+      ao1_2 = tanh(\
        \
       gkw1_0_2*ao0_0 + \
        \
@@ -264,9 +267,10 @@ instr 100
       gkw1_2_2*ao0_2 + \
        \
       gkw1_3_2*ao0_3  \
-      
+       \
+      )
    
-      ao1_3 = \
+      ao1_3 = tanh(\
        \
       gkw1_0_3*ao0_0 + \
        \
@@ -275,9 +279,10 @@ instr 100
       gkw1_2_3*ao0_2 + \
        \
       gkw1_3_3*ao0_3  \
-      
+       \
+      )
    
-      ao1_4 = \
+      ao1_4 = tanh(\
        \
       gkw1_0_4*ao0_0 + \
        \
@@ -286,11 +291,12 @@ instr 100
       gkw1_2_4*ao0_2 + \
        \
       gkw1_3_4*ao0_3  \
-      
+       \
+      )
    
 
    
-      ao2_0 = \
+      ao2_0 = tanh(\
        \
       gkw2_0_0*ao1_0 + \
        \
@@ -301,9 +307,10 @@ instr 100
       gkw2_3_0*ao1_3 + \
        \
       gkw2_4_0*ao1_4  \
-      
+       \
+      )
    
-      ao2_1 = \
+      ao2_1 = tanh(\
        \
       gkw2_0_1*ao1_0 + \
        \
@@ -314,7 +321,8 @@ instr 100
       gkw2_3_1*ao1_3 + \
        \
       gkw2_4_1*ao1_4  \
-      
+       \
+      )
    
 
 
@@ -324,12 +332,12 @@ instr 100
          gao2_1 = ao2_1
    
 
-   ao1 clip ao2_0, 2, 1
-   ao2 clip ao2_1, 2, 1    
+   ao1 clip ao2_0,2,1
+   ao2 clip ao2_1,2,1
+   
    outs ao1, ao2
-   gai3 = ao1
-   gai4 = ao2
-
+   delayw ao1
+   delayw ao2
 
 endin
 
