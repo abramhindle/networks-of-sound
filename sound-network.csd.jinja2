@@ -56,19 +56,28 @@ FLcolor	180,200,199
 ;;; w1_1
 
 
-FLpanel "Network",500,500
+FLpanel "Network",500,{{n_neurons*50 + 15*n_layers + 50}}
         imin = -1
         imax = 1
         islw = 500
         islh = 15
         itype = 5
         ioff = islh
+        ibl = {{n_neurons*50 + 15*n_layers + 50}} - 50
 {% for layer in layers %}
    {% for e in layer %}
-    gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}, iww{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} FLslider "{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}", imin, imax, 0, itype, -1, islw, islh, 0, ioff*({{ e["n"] + e["layer"] }})
+    gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}, giww{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} FLslider "{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}", imin, imax, 0, itype, -1, islw, islh, 0, ioff*({{ e["n"] + e["layer"] }})
    {% endfor %}
    ihandle FLbox "@line", 1, 1, 1, islw, 5, 0, ioff*{{layer[-1]["n"]}}
 {% endfor %}
+   kbz, ibz FLbutton "0"      ,    1, 0, 1, 50, 50,   0, ibl, 105, 1000, 0, kr/sr
+   kbz, ibz FLbutton "Random1",    1, 0, 1, 50, 50,  50, ibl, 105,  701, 0, kr/sr
+   kbz, ibz FLbutton "Random2",    1, 0, 1, 50, 50, 100, ibl, 105,  702, 0, kr/sr
+   kbz, ibz FLbutton "Random*",    1, 0, 1, 50, 50, 150, ibl, 105,  666, 0, kr/sr
+   kbz, ibz FLbutton "Random*[1]", 1, 0, 1, 50, 50, 200, ibl, 105,  667, 0, kr/sr
+   kbz, ibz FLbutton "90%"    ,    1, 0, 1, 50, 50, 250, ibl, 105,  800, 0, kr/sr, 0.9
+   kbz, ibz FLbutton "110%",       1, 0, 1, 50, 50, 300, ibl, 105,  800, 0, kr/sr, 1.1  
+
 FLpanel_end	;***** end of container
 
 FLrun		;***** runs the widget thread 
@@ -87,11 +96,11 @@ instr 100
 
 {% for layer in neuron_layers %}
    {% for neuron in layer %}
-      ao{{neuron["layer"]}}_{{neuron["to"]}} = tanh(\
+      ao{{neuron["layer"]}}_{{neuron["to"]}} = tanh(1.0*(
       {% for e in neuron["inputs"] %} \
       gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}*ao{{e["layer"]-1}}_{{e["from"]}} {{ "+" if not loop.last }} \
       {% endfor %} \
-      )
+      ))
    {% endfor %}
 {% endfor %}
 
@@ -107,6 +116,97 @@ instr 100
    delayw ao2
 
 endin
+
+instr 1000;;;; "zero"
+{% for layer in neuron_layers %}
+   {% for neuron in layer %}
+      {% for e in neuron["inputs"] %} 
+      gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = 0
+      FLsetVal_i 0, giww{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      {% endfor %} 
+   {% endfor %}
+{% endfor %}
+      p3 = 0      
+endin
+
+instr 666 ;;;;
+{% for layer in neuron_layers %}
+   {% for neuron in layer %}
+      {% for e in neuron["inputs"] %} 
+      iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = rnd(2) - 1
+      gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      FLsetVal_i iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}, giww{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      {% endfor %} 
+   {% endfor %}
+{% endfor %}
+
+      p3 = 0
+endin
+
+
+instr 667 ;;;; choose 1
+{% for layer in neuron_layers %}
+   {% for neuron in layer %}
+      {% for e in neuron["inputs"] %}
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/({{n_params}})) then
+         iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = rnd(2) - 1
+         gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+         FLsetVal_i iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}, giww{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      endif
+      {% endfor %} 
+   {% endfor %}
+{% endfor %}
+
+      p3 = 0
+endin
+
+
+instr 800 ;;;; scale
+      iscale = p4
+{% for layer in neuron_layers %}
+   {% for neuron in layer %}
+      {% for e in neuron["inputs"] %} 
+      iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = iscale*i(gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}})
+      gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      FLsetVal_i iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}, giww{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      {% endfor %} 
+   {% endfor %}
+{% endfor %}
+
+      p3 = 0
+endin
+
+
+
+instr 701 ;;;;
+{% for layer in neuron_layers[0:1] %}
+   {% for neuron in layer %}
+      {% for e in neuron["inputs"] %} 
+      iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = rnd(2) - 1
+      gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      FLsetVal_i iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}, giww{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      {% endfor %} 
+   {% endfor %}
+{% endfor %}
+
+      p3 = 0
+endin
+
+instr 702 ;;;;
+{% for layer in neuron_layers[1:2] %}
+   {% for neuron in layer %}
+      {% for e in neuron["inputs"] %} 
+      iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = rnd(2) - 1
+      gkw{{e["layer"]}}_{{e["from"]}}_{{e["to"]}} = iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      FLsetVal_i iv_{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}, giww{{e["layer"]}}_{{e["from"]}}_{{e["to"]}}
+      {% endfor %} 
+   {% endfor %}
+{% endfor %}
+
+      p3 = 0
+endin
+
 
 </CsInstruments>
 <CsScore>
