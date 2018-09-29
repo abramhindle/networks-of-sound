@@ -1,0 +1,168 @@
+<CsoundSynthesizer>
+<CsOptions>
+;-L stdin -odac           -iadc     -dm6    ;;;RT audio I/O
+ -L stdin -odac           -iadc     -dm6  -+rtaudio=jack -+jack_client=csoundGrain  -b 1024 -B 2048   ;;;RT audio I/O
+; For Non-realtime ouput leave only the line below:
+; -o grain3.wav -W ;;; for file output any platform
+</CsOptions>
+<CsInstruments>
+
+sr	=  48000
+;kr      =  100
+ksmps   =  16
+nchnls	=  2
+0dbfs = 1
+
+;;;#define SIZE #268435456#
+#define SIZE #4194304#
+
+{% for neuron in neurons %}
+      gao{{neuron["id"]}} init 0
+   {% for from in neuron["inputs"] %} 
+      gkw{{from}}_{{neuron["id"]}} init 0
+   {% endfor %}
+{% endfor %}
+
+
+
+
+/* f#  time  size  1  filcod  skiptime  format  channel */
+
+
+giEXP = -1
+giLINEAR = 0
+
+FLcolor	180,200,199
+;;;
+;;;     [1] [2] [X] [Y]
+;;;    /\/\/\/\/\/\/\/\
+;;;  [ ] [ ] [ ] [ ] [ ]
+;;;     \/\/\/\/\/\/\/
+;;;    [ ] [ ] [ ] [ ]
+;;;      \/\/\/\/\/
+;;;       [1] [2]
+;;; 4 inputs
+;;; layer 1
+;;; w1_1
+
+
+FLpanel "Network",500,{{n_neurons*50 + 15*n_params + 50}}
+        imin = -4
+        imax = 4
+        islw = 500
+        islh = 15
+        itype = 5
+        ioff = islh
+        ibl = {{n_neurons*50 + 15*n_params + 50}} - 50
+{% for control in controls %}
+   gkw{{control[1]}}_{{control[0]}}, giww{{control[1]}}_{{control[0]}} FLslider "{{control[1]}}_{{control[0]}}", imin, imax, 0, itype, -1, islw, islh, 0, ioff*{{loop.index}}
+{% endfor %}
+
+   kbz, ibz FLbutton "0"      ,    1, 0, 1, 50, 50,   0, ibl, 105, 1000, 0, kr/sr
+   kbz, ibz FLbutton "Random*",    1, 0, 1, 50, 50, 150, ibl, 105,  666, 0, kr/sr
+   kbz, ibz FLbutton "Random*[1]", 1, 0, 1, 50, 50, 200, ibl, 105,  667, 0, kr/sr
+   kbz, ibz FLbutton "90%"    ,    1, 0, 1, 50, 50, 250, ibl, 105,  800, 0, kr/sr, 0.9
+   kbz, ibz FLbutton "110%",       1, 0, 1, 50, 50, 300, ibl, 105,  800, 0, kr/sr, 1.1  
+
+FLpanel_end	;***** end of container
+
+FLrun		;***** runs the widget thread 
+
+instr 1
+endin
+
+instr 100
+   ;;; get inputs
+   ai1, ai2 ins
+   {% for neuron in input_layer %}
+      gao{{neuron["id"]}} = ai{{loop.index}}
+   {% endfor %}
+
+   ;;; setup the neurons
+   {% for neuron in neurons %}
+      ao{{neuron["id"]}} delay gao{{neuron["id"]}},2*kr/sr
+   {% endfor %}
+
+
+   {% for neuron in neuron_layer + output_layer %}
+      gao{{neuron["id"]}} = tanh(1.0*(
+      {% for from in neuron["inputs"] %} \
+          gkw{{from}}_{{neuron["id"]}}*ao{{from}} {{ "+" if not loop.last }} \
+      {% endfor %} \
+      ))
+   {% endfor %}
+
+
+   outs gao{{output_layer[0]["id"]}},gao{{output_layer[-1]["id"]}}
+   
+
+endin
+
+instr 1000;;;; "zero"
+   {% for neuron in neuron_layers %}
+      {% for from in neuron["inputs"] %} 
+          gkw{{from}}_{{neuron["id"]}} = 0
+          FLsetVal_i 0, giww{{from}}_{{neuron["id"]}}
+      {% endfor %} 
+   {% endfor %}
+      p3 = 0      
+endin
+
+instr 666 ;;;;
+   {% for neuron in neuron_layer %}
+      {% for from in neuron["inputs"] %} 
+      iv_{{from}}_{{neuron["id"]}} = rnd(2) - 1
+      gkw{{from}}_{{neuron["id"]}} = iv_{{from}}_{{neuron["id"]}}
+      FLsetVal_i iv_{{from}}_{{neuron["id"]}}, giww{{from}}_{{neuron["id"]}}
+      {% endfor %} 
+   {% endfor %}
+      p3 = 0
+endin
+
+
+instr 667 ;;;; choose 1
+
+   {% for neuron in neuron_layer %}
+      {% for from in neuron["inputs"] %}
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/({{n_params}})) then
+          iv_{{from}}_{{neuron["id"]}} = rnd(2) - 1
+          gkw{{from}}_{{neuron["id"]}} = iv_{{from}}_{{neuron["id"]}}
+         FLsetVal_i iv_{{from}}_{{neuron["id"]}}, giww{{from}}_{{neuron["id"]}}
+      endif
+      {% endfor %} 
+   {% endfor %}
+      p3 = 0
+
+endin
+
+
+instr 800 ;;;; scale
+      iscale = p4
+   {% for neuron in neuron_layer %}
+      {% for from in neuron["inputs"] %}
+      
+      iv_{{from}}_{{neuron["id"]}} = iscale*i(gkw{{from}}_{{neuron["id"]}})
+      gkw{{from}}_{{neuron["id"]}} = iv_{{from}}_{{neuron["id"]}}
+      FLsetVal_i iv_{{from}}_{{neuron["id"]}}, giww{{from}}_{{neuron["id"]}}
+      {% endfor %} 
+   {% endfor %}
+
+      p3 = 0
+endin
+
+
+
+
+
+</CsInstruments>
+<CsScore>
+t 0 60
+
+f 0 3600
+
+i 100 0 3600
+
+e
+</CsScore>
+</CsoundSynthesizer>
