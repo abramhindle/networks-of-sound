@@ -468,6 +468,754 @@ FLpanelEnd	;***** end of container
 
 FLrun		;***** runs the widget thread 
 
+gihandle OSCinit 7770
+
+instr 10001 ;; osc listen
+
+   
+
+    
+    kw3_2 init 0
+    ktrig3_2  OSClisten gihandle, "/fully/w3/2", "f",kw3_2 
+    ;; printf "Message to 3_2 %f",ktrig3_2,kw3_2 
+    if (ktrig3_2 > 0) then
+       gkw3_2 = kw3_2 
+       FLsetVal ktrig3_2, kw3_2, giww3_2
+    endif
+    
+    kw4_2 init 0
+    ktrig4_2  OSClisten gihandle, "/fully/w4/2", "f",kw4_2 
+    ;; printf "Message to 4_2 %f",ktrig4_2,kw4_2 
+    if (ktrig4_2 > 0) then
+       gkw4_2 = kw4_2 
+       FLsetVal ktrig4_2, kw4_2, giww4_2
+    endif
+    
+    kw5_2 init 0
+    ktrig5_2  OSClisten gihandle, "/fully/w5/2", "f",kw5_2 
+    ;; printf "Message to 5_2 %f",ktrig5_2,kw5_2 
+    if (ktrig5_2 > 0) then
+       gkw5_2 = kw5_2 
+       FLsetVal ktrig5_2, kw5_2, giww5_2
+    endif
+    
+    kw6_2 init 0
+    ktrig6_2  OSClisten gihandle, "/fully/w6/2", "f",kw6_2 
+    ;; printf "Message to 6_2 %f",ktrig6_2,kw6_2 
+    if (ktrig6_2 > 0) then
+       gkw6_2 = kw6_2 
+       FLsetVal ktrig6_2, kw6_2, giww6_2
+    endif
+    
+    kw7_2 init 0
+    ktrig7_2  OSClisten gihandle, "/fully/w7/2", "f",kw7_2 
+    ;; printf "Message to 7_2 %f",ktrig7_2,kw7_2 
+    if (ktrig7_2 > 0) then
+       gkw7_2 = kw7_2 
+       FLsetVal ktrig7_2, kw7_2, giww7_2
+    endif
+    
+    kw8_2 init 0
+    ktrig8_2  OSClisten gihandle, "/fully/w8/2", "f",kw8_2 
+    ;; printf "Message to 8_2 %f",ktrig8_2,kw8_2 
+    if (ktrig8_2 > 0) then
+       gkw8_2 = kw8_2 
+       FLsetVal ktrig8_2, kw8_2, giww8_2
+    endif
+    
+    kw9_2 init 0
+    ktrig9_2  OSClisten gihandle, "/fully/w9/2", "f",kw9_2 
+    ;; printf "Message to 9_2 %f",ktrig9_2,kw9_2 
+    if (ktrig9_2 > 0) then
+       gkw9_2 = kw9_2 
+       FLsetVal ktrig9_2, kw9_2, giww9_2
+    endif
+    
+    kw10_2 init 0
+    ktrig10_2  OSClisten gihandle, "/fully/w10/2", "f",kw10_2 
+    ;; printf "Message to 10_2 %f",ktrig10_2,kw10_2 
+    if (ktrig10_2 > 0) then
+       gkw10_2 = kw10_2 
+       FLsetVal ktrig10_2, kw10_2, giww10_2
+    endif
+    
+    kw1_2 init 0
+    ktrig1_2  OSClisten gihandle, "/fully/w1/2", "f",kw1_2 
+    ;; printf "Message to 1_2 %f",ktrig1_2,kw1_2 
+    if (ktrig1_2 > 0) then
+       gkw1_2 = kw1_2 
+       FLsetVal ktrig1_2, kw1_2, giww1_2
+    endif
+   
+
+    
+    kw2_3 init 0
+    ktrig2_3  OSClisten gihandle, "/fully/w2/3", "f",kw2_3 
+    ;; printf "Message to 2_3 %f",ktrig2_3,kw2_3 
+    if (ktrig2_3 > 0) then
+       gkw2_3 = kw2_3 
+       FLsetVal ktrig2_3, kw2_3, giww2_3
+    endif
+    
+    kw4_3 init 0
+    ktrig4_3  OSClisten gihandle, "/fully/w4/3", "f",kw4_3 
+    ;; printf "Message to 4_3 %f",ktrig4_3,kw4_3 
+    if (ktrig4_3 > 0) then
+       gkw4_3 = kw4_3 
+       FLsetVal ktrig4_3, kw4_3, giww4_3
+    endif
+    
+    kw5_3 init 0
+    ktrig5_3  OSClisten gihandle, "/fully/w5/3", "f",kw5_3 
+    ;; printf "Message to 5_3 %f",ktrig5_3,kw5_3 
+    if (ktrig5_3 > 0) then
+       gkw5_3 = kw5_3 
+       FLsetVal ktrig5_3, kw5_3, giww5_3
+    endif
+    
+    kw6_3 init 0
+    ktrig6_3  OSClisten gihandle, "/fully/w6/3", "f",kw6_3 
+    ;; printf "Message to 6_3 %f",ktrig6_3,kw6_3 
+    if (ktrig6_3 > 0) then
+       gkw6_3 = kw6_3 
+       FLsetVal ktrig6_3, kw6_3, giww6_3
+    endif
+    
+    kw7_3 init 0
+    ktrig7_3  OSClisten gihandle, "/fully/w7/3", "f",kw7_3 
+    ;; printf "Message to 7_3 %f",ktrig7_3,kw7_3 
+    if (ktrig7_3 > 0) then
+       gkw7_3 = kw7_3 
+       FLsetVal ktrig7_3, kw7_3, giww7_3
+    endif
+    
+    kw8_3 init 0
+    ktrig8_3  OSClisten gihandle, "/fully/w8/3", "f",kw8_3 
+    ;; printf "Message to 8_3 %f",ktrig8_3,kw8_3 
+    if (ktrig8_3 > 0) then
+       gkw8_3 = kw8_3 
+       FLsetVal ktrig8_3, kw8_3, giww8_3
+    endif
+    
+    kw9_3 init 0
+    ktrig9_3  OSClisten gihandle, "/fully/w9/3", "f",kw9_3 
+    ;; printf "Message to 9_3 %f",ktrig9_3,kw9_3 
+    if (ktrig9_3 > 0) then
+       gkw9_3 = kw9_3 
+       FLsetVal ktrig9_3, kw9_3, giww9_3
+    endif
+    
+    kw10_3 init 0
+    ktrig10_3  OSClisten gihandle, "/fully/w10/3", "f",kw10_3 
+    ;; printf "Message to 10_3 %f",ktrig10_3,kw10_3 
+    if (ktrig10_3 > 0) then
+       gkw10_3 = kw10_3 
+       FLsetVal ktrig10_3, kw10_3, giww10_3
+    endif
+    
+    kw1_3 init 0
+    ktrig1_3  OSClisten gihandle, "/fully/w1/3", "f",kw1_3 
+    ;; printf "Message to 1_3 %f",ktrig1_3,kw1_3 
+    if (ktrig1_3 > 0) then
+       gkw1_3 = kw1_3 
+       FLsetVal ktrig1_3, kw1_3, giww1_3
+    endif
+   
+
+    
+    kw2_4 init 0
+    ktrig2_4  OSClisten gihandle, "/fully/w2/4", "f",kw2_4 
+    ;; printf "Message to 2_4 %f",ktrig2_4,kw2_4 
+    if (ktrig2_4 > 0) then
+       gkw2_4 = kw2_4 
+       FLsetVal ktrig2_4, kw2_4, giww2_4
+    endif
+    
+    kw3_4 init 0
+    ktrig3_4  OSClisten gihandle, "/fully/w3/4", "f",kw3_4 
+    ;; printf "Message to 3_4 %f",ktrig3_4,kw3_4 
+    if (ktrig3_4 > 0) then
+       gkw3_4 = kw3_4 
+       FLsetVal ktrig3_4, kw3_4, giww3_4
+    endif
+    
+    kw5_4 init 0
+    ktrig5_4  OSClisten gihandle, "/fully/w5/4", "f",kw5_4 
+    ;; printf "Message to 5_4 %f",ktrig5_4,kw5_4 
+    if (ktrig5_4 > 0) then
+       gkw5_4 = kw5_4 
+       FLsetVal ktrig5_4, kw5_4, giww5_4
+    endif
+    
+    kw6_4 init 0
+    ktrig6_4  OSClisten gihandle, "/fully/w6/4", "f",kw6_4 
+    ;; printf "Message to 6_4 %f",ktrig6_4,kw6_4 
+    if (ktrig6_4 > 0) then
+       gkw6_4 = kw6_4 
+       FLsetVal ktrig6_4, kw6_4, giww6_4
+    endif
+    
+    kw7_4 init 0
+    ktrig7_4  OSClisten gihandle, "/fully/w7/4", "f",kw7_4 
+    ;; printf "Message to 7_4 %f",ktrig7_4,kw7_4 
+    if (ktrig7_4 > 0) then
+       gkw7_4 = kw7_4 
+       FLsetVal ktrig7_4, kw7_4, giww7_4
+    endif
+    
+    kw8_4 init 0
+    ktrig8_4  OSClisten gihandle, "/fully/w8/4", "f",kw8_4 
+    ;; printf "Message to 8_4 %f",ktrig8_4,kw8_4 
+    if (ktrig8_4 > 0) then
+       gkw8_4 = kw8_4 
+       FLsetVal ktrig8_4, kw8_4, giww8_4
+    endif
+    
+    kw9_4 init 0
+    ktrig9_4  OSClisten gihandle, "/fully/w9/4", "f",kw9_4 
+    ;; printf "Message to 9_4 %f",ktrig9_4,kw9_4 
+    if (ktrig9_4 > 0) then
+       gkw9_4 = kw9_4 
+       FLsetVal ktrig9_4, kw9_4, giww9_4
+    endif
+    
+    kw10_4 init 0
+    ktrig10_4  OSClisten gihandle, "/fully/w10/4", "f",kw10_4 
+    ;; printf "Message to 10_4 %f",ktrig10_4,kw10_4 
+    if (ktrig10_4 > 0) then
+       gkw10_4 = kw10_4 
+       FLsetVal ktrig10_4, kw10_4, giww10_4
+    endif
+    
+    kw1_4 init 0
+    ktrig1_4  OSClisten gihandle, "/fully/w1/4", "f",kw1_4 
+    ;; printf "Message to 1_4 %f",ktrig1_4,kw1_4 
+    if (ktrig1_4 > 0) then
+       gkw1_4 = kw1_4 
+       FLsetVal ktrig1_4, kw1_4, giww1_4
+    endif
+   
+
+    
+    kw2_5 init 0
+    ktrig2_5  OSClisten gihandle, "/fully/w2/5", "f",kw2_5 
+    ;; printf "Message to 2_5 %f",ktrig2_5,kw2_5 
+    if (ktrig2_5 > 0) then
+       gkw2_5 = kw2_5 
+       FLsetVal ktrig2_5, kw2_5, giww2_5
+    endif
+    
+    kw3_5 init 0
+    ktrig3_5  OSClisten gihandle, "/fully/w3/5", "f",kw3_5 
+    ;; printf "Message to 3_5 %f",ktrig3_5,kw3_5 
+    if (ktrig3_5 > 0) then
+       gkw3_5 = kw3_5 
+       FLsetVal ktrig3_5, kw3_5, giww3_5
+    endif
+    
+    kw4_5 init 0
+    ktrig4_5  OSClisten gihandle, "/fully/w4/5", "f",kw4_5 
+    ;; printf "Message to 4_5 %f",ktrig4_5,kw4_5 
+    if (ktrig4_5 > 0) then
+       gkw4_5 = kw4_5 
+       FLsetVal ktrig4_5, kw4_5, giww4_5
+    endif
+    
+    kw6_5 init 0
+    ktrig6_5  OSClisten gihandle, "/fully/w6/5", "f",kw6_5 
+    ;; printf "Message to 6_5 %f",ktrig6_5,kw6_5 
+    if (ktrig6_5 > 0) then
+       gkw6_5 = kw6_5 
+       FLsetVal ktrig6_5, kw6_5, giww6_5
+    endif
+    
+    kw7_5 init 0
+    ktrig7_5  OSClisten gihandle, "/fully/w7/5", "f",kw7_5 
+    ;; printf "Message to 7_5 %f",ktrig7_5,kw7_5 
+    if (ktrig7_5 > 0) then
+       gkw7_5 = kw7_5 
+       FLsetVal ktrig7_5, kw7_5, giww7_5
+    endif
+    
+    kw8_5 init 0
+    ktrig8_5  OSClisten gihandle, "/fully/w8/5", "f",kw8_5 
+    ;; printf "Message to 8_5 %f",ktrig8_5,kw8_5 
+    if (ktrig8_5 > 0) then
+       gkw8_5 = kw8_5 
+       FLsetVal ktrig8_5, kw8_5, giww8_5
+    endif
+    
+    kw9_5 init 0
+    ktrig9_5  OSClisten gihandle, "/fully/w9/5", "f",kw9_5 
+    ;; printf "Message to 9_5 %f",ktrig9_5,kw9_5 
+    if (ktrig9_5 > 0) then
+       gkw9_5 = kw9_5 
+       FLsetVal ktrig9_5, kw9_5, giww9_5
+    endif
+    
+    kw10_5 init 0
+    ktrig10_5  OSClisten gihandle, "/fully/w10/5", "f",kw10_5 
+    ;; printf "Message to 10_5 %f",ktrig10_5,kw10_5 
+    if (ktrig10_5 > 0) then
+       gkw10_5 = kw10_5 
+       FLsetVal ktrig10_5, kw10_5, giww10_5
+    endif
+    
+    kw1_5 init 0
+    ktrig1_5  OSClisten gihandle, "/fully/w1/5", "f",kw1_5 
+    ;; printf "Message to 1_5 %f",ktrig1_5,kw1_5 
+    if (ktrig1_5 > 0) then
+       gkw1_5 = kw1_5 
+       FLsetVal ktrig1_5, kw1_5, giww1_5
+    endif
+   
+
+    
+    kw2_6 init 0
+    ktrig2_6  OSClisten gihandle, "/fully/w2/6", "f",kw2_6 
+    ;; printf "Message to 2_6 %f",ktrig2_6,kw2_6 
+    if (ktrig2_6 > 0) then
+       gkw2_6 = kw2_6 
+       FLsetVal ktrig2_6, kw2_6, giww2_6
+    endif
+    
+    kw3_6 init 0
+    ktrig3_6  OSClisten gihandle, "/fully/w3/6", "f",kw3_6 
+    ;; printf "Message to 3_6 %f",ktrig3_6,kw3_6 
+    if (ktrig3_6 > 0) then
+       gkw3_6 = kw3_6 
+       FLsetVal ktrig3_6, kw3_6, giww3_6
+    endif
+    
+    kw4_6 init 0
+    ktrig4_6  OSClisten gihandle, "/fully/w4/6", "f",kw4_6 
+    ;; printf "Message to 4_6 %f",ktrig4_6,kw4_6 
+    if (ktrig4_6 > 0) then
+       gkw4_6 = kw4_6 
+       FLsetVal ktrig4_6, kw4_6, giww4_6
+    endif
+    
+    kw5_6 init 0
+    ktrig5_6  OSClisten gihandle, "/fully/w5/6", "f",kw5_6 
+    ;; printf "Message to 5_6 %f",ktrig5_6,kw5_6 
+    if (ktrig5_6 > 0) then
+       gkw5_6 = kw5_6 
+       FLsetVal ktrig5_6, kw5_6, giww5_6
+    endif
+    
+    kw7_6 init 0
+    ktrig7_6  OSClisten gihandle, "/fully/w7/6", "f",kw7_6 
+    ;; printf "Message to 7_6 %f",ktrig7_6,kw7_6 
+    if (ktrig7_6 > 0) then
+       gkw7_6 = kw7_6 
+       FLsetVal ktrig7_6, kw7_6, giww7_6
+    endif
+    
+    kw8_6 init 0
+    ktrig8_6  OSClisten gihandle, "/fully/w8/6", "f",kw8_6 
+    ;; printf "Message to 8_6 %f",ktrig8_6,kw8_6 
+    if (ktrig8_6 > 0) then
+       gkw8_6 = kw8_6 
+       FLsetVal ktrig8_6, kw8_6, giww8_6
+    endif
+    
+    kw9_6 init 0
+    ktrig9_6  OSClisten gihandle, "/fully/w9/6", "f",kw9_6 
+    ;; printf "Message to 9_6 %f",ktrig9_6,kw9_6 
+    if (ktrig9_6 > 0) then
+       gkw9_6 = kw9_6 
+       FLsetVal ktrig9_6, kw9_6, giww9_6
+    endif
+    
+    kw10_6 init 0
+    ktrig10_6  OSClisten gihandle, "/fully/w10/6", "f",kw10_6 
+    ;; printf "Message to 10_6 %f",ktrig10_6,kw10_6 
+    if (ktrig10_6 > 0) then
+       gkw10_6 = kw10_6 
+       FLsetVal ktrig10_6, kw10_6, giww10_6
+    endif
+    
+    kw1_6 init 0
+    ktrig1_6  OSClisten gihandle, "/fully/w1/6", "f",kw1_6 
+    ;; printf "Message to 1_6 %f",ktrig1_6,kw1_6 
+    if (ktrig1_6 > 0) then
+       gkw1_6 = kw1_6 
+       FLsetVal ktrig1_6, kw1_6, giww1_6
+    endif
+   
+
+    
+    kw2_7 init 0
+    ktrig2_7  OSClisten gihandle, "/fully/w2/7", "f",kw2_7 
+    ;; printf "Message to 2_7 %f",ktrig2_7,kw2_7 
+    if (ktrig2_7 > 0) then
+       gkw2_7 = kw2_7 
+       FLsetVal ktrig2_7, kw2_7, giww2_7
+    endif
+    
+    kw3_7 init 0
+    ktrig3_7  OSClisten gihandle, "/fully/w3/7", "f",kw3_7 
+    ;; printf "Message to 3_7 %f",ktrig3_7,kw3_7 
+    if (ktrig3_7 > 0) then
+       gkw3_7 = kw3_7 
+       FLsetVal ktrig3_7, kw3_7, giww3_7
+    endif
+    
+    kw4_7 init 0
+    ktrig4_7  OSClisten gihandle, "/fully/w4/7", "f",kw4_7 
+    ;; printf "Message to 4_7 %f",ktrig4_7,kw4_7 
+    if (ktrig4_7 > 0) then
+       gkw4_7 = kw4_7 
+       FLsetVal ktrig4_7, kw4_7, giww4_7
+    endif
+    
+    kw5_7 init 0
+    ktrig5_7  OSClisten gihandle, "/fully/w5/7", "f",kw5_7 
+    ;; printf "Message to 5_7 %f",ktrig5_7,kw5_7 
+    if (ktrig5_7 > 0) then
+       gkw5_7 = kw5_7 
+       FLsetVal ktrig5_7, kw5_7, giww5_7
+    endif
+    
+    kw6_7 init 0
+    ktrig6_7  OSClisten gihandle, "/fully/w6/7", "f",kw6_7 
+    ;; printf "Message to 6_7 %f",ktrig6_7,kw6_7 
+    if (ktrig6_7 > 0) then
+       gkw6_7 = kw6_7 
+       FLsetVal ktrig6_7, kw6_7, giww6_7
+    endif
+    
+    kw8_7 init 0
+    ktrig8_7  OSClisten gihandle, "/fully/w8/7", "f",kw8_7 
+    ;; printf "Message to 8_7 %f",ktrig8_7,kw8_7 
+    if (ktrig8_7 > 0) then
+       gkw8_7 = kw8_7 
+       FLsetVal ktrig8_7, kw8_7, giww8_7
+    endif
+    
+    kw9_7 init 0
+    ktrig9_7  OSClisten gihandle, "/fully/w9/7", "f",kw9_7 
+    ;; printf "Message to 9_7 %f",ktrig9_7,kw9_7 
+    if (ktrig9_7 > 0) then
+       gkw9_7 = kw9_7 
+       FLsetVal ktrig9_7, kw9_7, giww9_7
+    endif
+    
+    kw10_7 init 0
+    ktrig10_7  OSClisten gihandle, "/fully/w10/7", "f",kw10_7 
+    ;; printf "Message to 10_7 %f",ktrig10_7,kw10_7 
+    if (ktrig10_7 > 0) then
+       gkw10_7 = kw10_7 
+       FLsetVal ktrig10_7, kw10_7, giww10_7
+    endif
+    
+    kw1_7 init 0
+    ktrig1_7  OSClisten gihandle, "/fully/w1/7", "f",kw1_7 
+    ;; printf "Message to 1_7 %f",ktrig1_7,kw1_7 
+    if (ktrig1_7 > 0) then
+       gkw1_7 = kw1_7 
+       FLsetVal ktrig1_7, kw1_7, giww1_7
+    endif
+   
+
+    
+    kw2_8 init 0
+    ktrig2_8  OSClisten gihandle, "/fully/w2/8", "f",kw2_8 
+    ;; printf "Message to 2_8 %f",ktrig2_8,kw2_8 
+    if (ktrig2_8 > 0) then
+       gkw2_8 = kw2_8 
+       FLsetVal ktrig2_8, kw2_8, giww2_8
+    endif
+    
+    kw3_8 init 0
+    ktrig3_8  OSClisten gihandle, "/fully/w3/8", "f",kw3_8 
+    ;; printf "Message to 3_8 %f",ktrig3_8,kw3_8 
+    if (ktrig3_8 > 0) then
+       gkw3_8 = kw3_8 
+       FLsetVal ktrig3_8, kw3_8, giww3_8
+    endif
+    
+    kw4_8 init 0
+    ktrig4_8  OSClisten gihandle, "/fully/w4/8", "f",kw4_8 
+    ;; printf "Message to 4_8 %f",ktrig4_8,kw4_8 
+    if (ktrig4_8 > 0) then
+       gkw4_8 = kw4_8 
+       FLsetVal ktrig4_8, kw4_8, giww4_8
+    endif
+    
+    kw5_8 init 0
+    ktrig5_8  OSClisten gihandle, "/fully/w5/8", "f",kw5_8 
+    ;; printf "Message to 5_8 %f",ktrig5_8,kw5_8 
+    if (ktrig5_8 > 0) then
+       gkw5_8 = kw5_8 
+       FLsetVal ktrig5_8, kw5_8, giww5_8
+    endif
+    
+    kw6_8 init 0
+    ktrig6_8  OSClisten gihandle, "/fully/w6/8", "f",kw6_8 
+    ;; printf "Message to 6_8 %f",ktrig6_8,kw6_8 
+    if (ktrig6_8 > 0) then
+       gkw6_8 = kw6_8 
+       FLsetVal ktrig6_8, kw6_8, giww6_8
+    endif
+    
+    kw7_8 init 0
+    ktrig7_8  OSClisten gihandle, "/fully/w7/8", "f",kw7_8 
+    ;; printf "Message to 7_8 %f",ktrig7_8,kw7_8 
+    if (ktrig7_8 > 0) then
+       gkw7_8 = kw7_8 
+       FLsetVal ktrig7_8, kw7_8, giww7_8
+    endif
+    
+    kw9_8 init 0
+    ktrig9_8  OSClisten gihandle, "/fully/w9/8", "f",kw9_8 
+    ;; printf "Message to 9_8 %f",ktrig9_8,kw9_8 
+    if (ktrig9_8 > 0) then
+       gkw9_8 = kw9_8 
+       FLsetVal ktrig9_8, kw9_8, giww9_8
+    endif
+    
+    kw10_8 init 0
+    ktrig10_8  OSClisten gihandle, "/fully/w10/8", "f",kw10_8 
+    ;; printf "Message to 10_8 %f",ktrig10_8,kw10_8 
+    if (ktrig10_8 > 0) then
+       gkw10_8 = kw10_8 
+       FLsetVal ktrig10_8, kw10_8, giww10_8
+    endif
+    
+    kw1_8 init 0
+    ktrig1_8  OSClisten gihandle, "/fully/w1/8", "f",kw1_8 
+    ;; printf "Message to 1_8 %f",ktrig1_8,kw1_8 
+    if (ktrig1_8 > 0) then
+       gkw1_8 = kw1_8 
+       FLsetVal ktrig1_8, kw1_8, giww1_8
+    endif
+   
+
+    
+    kw2_9 init 0
+    ktrig2_9  OSClisten gihandle, "/fully/w2/9", "f",kw2_9 
+    ;; printf "Message to 2_9 %f",ktrig2_9,kw2_9 
+    if (ktrig2_9 > 0) then
+       gkw2_9 = kw2_9 
+       FLsetVal ktrig2_9, kw2_9, giww2_9
+    endif
+    
+    kw3_9 init 0
+    ktrig3_9  OSClisten gihandle, "/fully/w3/9", "f",kw3_9 
+    ;; printf "Message to 3_9 %f",ktrig3_9,kw3_9 
+    if (ktrig3_9 > 0) then
+       gkw3_9 = kw3_9 
+       FLsetVal ktrig3_9, kw3_9, giww3_9
+    endif
+    
+    kw4_9 init 0
+    ktrig4_9  OSClisten gihandle, "/fully/w4/9", "f",kw4_9 
+    ;; printf "Message to 4_9 %f",ktrig4_9,kw4_9 
+    if (ktrig4_9 > 0) then
+       gkw4_9 = kw4_9 
+       FLsetVal ktrig4_9, kw4_9, giww4_9
+    endif
+    
+    kw5_9 init 0
+    ktrig5_9  OSClisten gihandle, "/fully/w5/9", "f",kw5_9 
+    ;; printf "Message to 5_9 %f",ktrig5_9,kw5_9 
+    if (ktrig5_9 > 0) then
+       gkw5_9 = kw5_9 
+       FLsetVal ktrig5_9, kw5_9, giww5_9
+    endif
+    
+    kw6_9 init 0
+    ktrig6_9  OSClisten gihandle, "/fully/w6/9", "f",kw6_9 
+    ;; printf "Message to 6_9 %f",ktrig6_9,kw6_9 
+    if (ktrig6_9 > 0) then
+       gkw6_9 = kw6_9 
+       FLsetVal ktrig6_9, kw6_9, giww6_9
+    endif
+    
+    kw7_9 init 0
+    ktrig7_9  OSClisten gihandle, "/fully/w7/9", "f",kw7_9 
+    ;; printf "Message to 7_9 %f",ktrig7_9,kw7_9 
+    if (ktrig7_9 > 0) then
+       gkw7_9 = kw7_9 
+       FLsetVal ktrig7_9, kw7_9, giww7_9
+    endif
+    
+    kw8_9 init 0
+    ktrig8_9  OSClisten gihandle, "/fully/w8/9", "f",kw8_9 
+    ;; printf "Message to 8_9 %f",ktrig8_9,kw8_9 
+    if (ktrig8_9 > 0) then
+       gkw8_9 = kw8_9 
+       FLsetVal ktrig8_9, kw8_9, giww8_9
+    endif
+    
+    kw10_9 init 0
+    ktrig10_9  OSClisten gihandle, "/fully/w10/9", "f",kw10_9 
+    ;; printf "Message to 10_9 %f",ktrig10_9,kw10_9 
+    if (ktrig10_9 > 0) then
+       gkw10_9 = kw10_9 
+       FLsetVal ktrig10_9, kw10_9, giww10_9
+    endif
+    
+    kw1_9 init 0
+    ktrig1_9  OSClisten gihandle, "/fully/w1/9", "f",kw1_9 
+    ;; printf "Message to 1_9 %f",ktrig1_9,kw1_9 
+    if (ktrig1_9 > 0) then
+       gkw1_9 = kw1_9 
+       FLsetVal ktrig1_9, kw1_9, giww1_9
+    endif
+   
+
+    
+    kw2_10 init 0
+    ktrig2_10  OSClisten gihandle, "/fully/w2/10", "f",kw2_10 
+    ;; printf "Message to 2_10 %f",ktrig2_10,kw2_10 
+    if (ktrig2_10 > 0) then
+       gkw2_10 = kw2_10 
+       FLsetVal ktrig2_10, kw2_10, giww2_10
+    endif
+    
+    kw3_10 init 0
+    ktrig3_10  OSClisten gihandle, "/fully/w3/10", "f",kw3_10 
+    ;; printf "Message to 3_10 %f",ktrig3_10,kw3_10 
+    if (ktrig3_10 > 0) then
+       gkw3_10 = kw3_10 
+       FLsetVal ktrig3_10, kw3_10, giww3_10
+    endif
+    
+    kw4_10 init 0
+    ktrig4_10  OSClisten gihandle, "/fully/w4/10", "f",kw4_10 
+    ;; printf "Message to 4_10 %f",ktrig4_10,kw4_10 
+    if (ktrig4_10 > 0) then
+       gkw4_10 = kw4_10 
+       FLsetVal ktrig4_10, kw4_10, giww4_10
+    endif
+    
+    kw5_10 init 0
+    ktrig5_10  OSClisten gihandle, "/fully/w5/10", "f",kw5_10 
+    ;; printf "Message to 5_10 %f",ktrig5_10,kw5_10 
+    if (ktrig5_10 > 0) then
+       gkw5_10 = kw5_10 
+       FLsetVal ktrig5_10, kw5_10, giww5_10
+    endif
+    
+    kw6_10 init 0
+    ktrig6_10  OSClisten gihandle, "/fully/w6/10", "f",kw6_10 
+    ;; printf "Message to 6_10 %f",ktrig6_10,kw6_10 
+    if (ktrig6_10 > 0) then
+       gkw6_10 = kw6_10 
+       FLsetVal ktrig6_10, kw6_10, giww6_10
+    endif
+    
+    kw7_10 init 0
+    ktrig7_10  OSClisten gihandle, "/fully/w7/10", "f",kw7_10 
+    ;; printf "Message to 7_10 %f",ktrig7_10,kw7_10 
+    if (ktrig7_10 > 0) then
+       gkw7_10 = kw7_10 
+       FLsetVal ktrig7_10, kw7_10, giww7_10
+    endif
+    
+    kw8_10 init 0
+    ktrig8_10  OSClisten gihandle, "/fully/w8/10", "f",kw8_10 
+    ;; printf "Message to 8_10 %f",ktrig8_10,kw8_10 
+    if (ktrig8_10 > 0) then
+       gkw8_10 = kw8_10 
+       FLsetVal ktrig8_10, kw8_10, giww8_10
+    endif
+    
+    kw9_10 init 0
+    ktrig9_10  OSClisten gihandle, "/fully/w9/10", "f",kw9_10 
+    ;; printf "Message to 9_10 %f",ktrig9_10,kw9_10 
+    if (ktrig9_10 > 0) then
+       gkw9_10 = kw9_10 
+       FLsetVal ktrig9_10, kw9_10, giww9_10
+    endif
+    
+    kw1_10 init 0
+    ktrig1_10  OSClisten gihandle, "/fully/w1/10", "f",kw1_10 
+    ;; printf "Message to 1_10 %f",ktrig1_10,kw1_10 
+    if (ktrig1_10 > 0) then
+       gkw1_10 = kw1_10 
+       FLsetVal ktrig1_10, kw1_10, giww1_10
+    endif
+   
+
+    
+    kw2_11 init 0
+    ktrig2_11  OSClisten gihandle, "/fully/w2/11", "f",kw2_11 
+    ;; printf "Message to 2_11 %f",ktrig2_11,kw2_11 
+    if (ktrig2_11 > 0) then
+       gkw2_11 = kw2_11 
+       FLsetVal ktrig2_11, kw2_11, giww2_11
+    endif
+    
+    kw3_11 init 0
+    ktrig3_11  OSClisten gihandle, "/fully/w3/11", "f",kw3_11 
+    ;; printf "Message to 3_11 %f",ktrig3_11,kw3_11 
+    if (ktrig3_11 > 0) then
+       gkw3_11 = kw3_11 
+       FLsetVal ktrig3_11, kw3_11, giww3_11
+    endif
+    
+    kw4_11 init 0
+    ktrig4_11  OSClisten gihandle, "/fully/w4/11", "f",kw4_11 
+    ;; printf "Message to 4_11 %f",ktrig4_11,kw4_11 
+    if (ktrig4_11 > 0) then
+       gkw4_11 = kw4_11 
+       FLsetVal ktrig4_11, kw4_11, giww4_11
+    endif
+    
+    kw5_11 init 0
+    ktrig5_11  OSClisten gihandle, "/fully/w5/11", "f",kw5_11 
+    ;; printf "Message to 5_11 %f",ktrig5_11,kw5_11 
+    if (ktrig5_11 > 0) then
+       gkw5_11 = kw5_11 
+       FLsetVal ktrig5_11, kw5_11, giww5_11
+    endif
+    
+    kw6_11 init 0
+    ktrig6_11  OSClisten gihandle, "/fully/w6/11", "f",kw6_11 
+    ;; printf "Message to 6_11 %f",ktrig6_11,kw6_11 
+    if (ktrig6_11 > 0) then
+       gkw6_11 = kw6_11 
+       FLsetVal ktrig6_11, kw6_11, giww6_11
+    endif
+    
+    kw7_11 init 0
+    ktrig7_11  OSClisten gihandle, "/fully/w7/11", "f",kw7_11 
+    ;; printf "Message to 7_11 %f",ktrig7_11,kw7_11 
+    if (ktrig7_11 > 0) then
+       gkw7_11 = kw7_11 
+       FLsetVal ktrig7_11, kw7_11, giww7_11
+    endif
+    
+    kw8_11 init 0
+    ktrig8_11  OSClisten gihandle, "/fully/w8/11", "f",kw8_11 
+    ;; printf "Message to 8_11 %f",ktrig8_11,kw8_11 
+    if (ktrig8_11 > 0) then
+       gkw8_11 = kw8_11 
+       FLsetVal ktrig8_11, kw8_11, giww8_11
+    endif
+    
+    kw9_11 init 0
+    ktrig9_11  OSClisten gihandle, "/fully/w9/11", "f",kw9_11 
+    ;; printf "Message to 9_11 %f",ktrig9_11,kw9_11 
+    if (ktrig9_11 > 0) then
+       gkw9_11 = kw9_11 
+       FLsetVal ktrig9_11, kw9_11, giww9_11
+    endif
+    
+    kw10_11 init 0
+    ktrig10_11  OSClisten gihandle, "/fully/w10/11", "f",kw10_11 
+    ;; printf "Message to 10_11 %f",ktrig10_11,kw10_11 
+    if (ktrig10_11 > 0) then
+       gkw10_11 = kw10_11 
+       FLsetVal ktrig10_11, kw10_11, giww10_11
+    endif
+   
+
+endin
+
 instr 1
 kascii   FLkeyIn
 ktrig changed kascii
@@ -2451,6 +3199,7 @@ f 0 3600
 
 i 100 0 3600
 i 1 0 3600
+i 10001 0 3600
 
 e
 </CsScore>

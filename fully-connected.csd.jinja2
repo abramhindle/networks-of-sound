@@ -82,6 +82,22 @@ FLpanelEnd	;***** end of container
 
 FLrun		;***** runs the widget thread 
 
+gihandle OSCinit 7770
+
+instr 10001 ;; osc listen
+{% for neuron in neurons %}
+   {% for from in neuron["inputs"] %} 
+    kw{{from}}_{{neuron["id"]}} init 0
+    ktrig{{from}}_{{neuron["id"]}}  OSClisten gihandle, "/fully/w{{from}}/{{neuron["id"]}}", "f",kw{{from}}_{{neuron["id"]}} 
+    ;; printf "Message to {{from}}_{{neuron["id"]}} %f",ktrig{{from}}_{{neuron["id"]}},kw{{from}}_{{neuron["id"]}} 
+    if (ktrig{{from}}_{{neuron["id"]}} > 0) then
+       gkw{{from}}_{{neuron["id"]}} = kw{{from}}_{{neuron["id"]}} 
+       FLsetVal ktrig{{from}}_{{neuron["id"]}}, kw{{from}}_{{neuron["id"]}}, giww{{from}}_{{neuron["id"]}}
+    endif
+   {% endfor %}
+{% endfor %}
+endin
+
 instr 1
 kascii   FLkeyIn
 ktrig changed kascii
@@ -247,6 +263,7 @@ f 0 3600
 
 i 100 0 3600
 i 1 0 3600
+i 10001 0 3600
 
 e
 </CsScore>
