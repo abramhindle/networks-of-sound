@@ -259,14 +259,16 @@ gkGet init 1
 gkShift init 0
 
 ;;; FLpanel "Network",500,1950
-FLpanel "FullyConnected",500,2050, -1, -1, 5, 1, 1
+;;; FLpanel "FullyConnected",500,2050, -1, -1, 5, 1, 1
+gibl = 1530
+FLpanel "FullyConnected",500,gibl, -1, -1, 5, 1, 1
         imin = -4
         imax = 4
         islw = 500
         islh = 15
         itype = 5
         ioff = islh
-        ibl = 1950 - 50
+        ibl = gibl - 150
 
    gkw3_2, giww3_2 FLslider "3_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*1
 
@@ -455,8 +457,8 @@ FLpanel "FullyConnected",500,2050, -1, -1, 5, 1, 1
    kbz, ibz FLbutton "90%"    ,    1, 0, 11, 50, 50, 250, ibl, 105,  800, 0, kr/sr, 0.9
    kbz, ibz FLbutton "110%",       1, 0, 11, 50, 50, 300, ibl, 105,  800, 0, kr/sr, 1.1  
 
-   kbz, ibz FLbutton "SAVE",       1, 0, 11, 50, 50, 350, ibl, 105,  6001, 0, 1.0
-   kbz, ibz FLbutton "LOAD",       1, 0, 11, 50, 50, 400, ibl, 105,  6000, 0, 1.0
+   kbz, ibz FLbutton "SAVE",       1, 0, 11, 50, 50, 350, ibl, 105,  6021, 0, 1.0
+   kbz, ibz FLbutton "LOAD",       1, 0, 11, 50, 50, 400, ibl, 105,  6020, 0, 1.0
 ;; kout, ihandle FLbutBank itype, inumx, inumy, iwidth, iheight, ix, iy, \
 ;;      iopcode [, kp1] [, kp2] [, kp3] [, kp4] [, kp5] [....] [, kpN]
    gkGet,ih1	FLbutBank	11, 10,1,  500,50, 0,ibl+50   ,0,6000,0,kr/sr
@@ -531,6 +533,13 @@ gkLoad init 0
 	isnap, inumel	FLsetsnap igkset
         printf_i "isnap inumel %i %i \n", 1, isnap, inumel
         endin
+
+	instr 6020 ;;; load
+	FLloadsnap "fully-connected.sav"
+	endin
+	instr 6021 ;;; save
+	FLsavesnap "fully-connected.sav"
+	endin
 
 instr 100
    ;;; get inputs

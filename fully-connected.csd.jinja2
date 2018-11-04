@@ -51,14 +51,16 @@ gkGet init 1
 gkShift init 0
 
 ;;; FLpanel "Network",500,{{n_neurons*50 + 15*n_params + 50}}
-FLpanel "FullyConnected",500,{{n_neurons*50 + 15*n_params + 150}}, -1, -1, 5, 1, 1
+;;; FLpanel "FullyConnected",500,{{n_neurons*50 + 15*n_params + 150}}, -1, -1, 5, 1, 1
+gibl = {{15*(n_controls + 2) + 150}}
+FLpanel "FullyConnected",500,gibl, -1, -1, 5, 1, 1
         imin = -4
         imax = 4
         islw = 500
         islh = 15
         itype = 5
         ioff = islh
-        ibl = {{n_neurons*50 + 15*n_params + 50}} - 50
+        ibl = gibl - 150
 {% for control in controls %}
    gkw{{control[1]}}_{{control[0]}}, giww{{control[1]}}_{{control[0]}} FLslider "{{control[1]}}_{{control[0]}}", imin, imax, 0, itype, -1, islw, islh, 0, ioff*{{loop.index}}
 {% endfor %}
@@ -69,8 +71,8 @@ FLpanel "FullyConnected",500,{{n_neurons*50 + 15*n_params + 150}}, -1, -1, 5, 1,
    kbz, ibz FLbutton "90%"    ,    1, 0, 11, 50, 50, 250, ibl, 105,  800, 0, kr/sr, 0.9
    kbz, ibz FLbutton "110%",       1, 0, 11, 50, 50, 300, ibl, 105,  800, 0, kr/sr, 1.1  
 
-   kbz, ibz FLbutton "SAVE",       1, 0, 11, 50, 50, 350, ibl, 105,  6001, 0, 1.0
-   kbz, ibz FLbutton "LOAD",       1, 0, 11, 50, 50, 400, ibl, 105,  6000, 0, 1.0
+   kbz, ibz FLbutton "SAVE",       1, 0, 11, 50, 50, 350, ibl, 105,  6021, 0, 1.0
+   kbz, ibz FLbutton "LOAD",       1, 0, 11, 50, 50, 400, ibl, 105,  6020, 0, 1.0
 ;; kout, ihandle FLbutBank itype, inumx, inumy, iwidth, iheight, ix, iy, \
 ;;      iopcode [, kp1] [, kp2] [, kp3] [, kp4] [, kp5] [....] [, kpN]
    gkGet,ih1	FLbutBank	11, 10,1,  500,50, 0,ibl+50   ,0,6000,0,kr/sr
@@ -145,6 +147,13 @@ gkLoad init 0
 	isnap, inumel	FLsetsnap igkset
         printf_i "isnap inumel %i %i \n", 1, isnap, inumel
         endin
+
+	instr 6020 ;;; load
+	FLloadsnap "fully-connected.sav"
+	endin
+	instr 6021 ;;; save
+	FLsavesnap "fully-connected.sav"
+	endin
 
 instr 100
    ;;; get inputs

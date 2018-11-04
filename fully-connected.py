@@ -50,6 +50,7 @@ params = {}
 params["neural_map"] = neural_map
 params["neurons"] = neural_map.values()
 params["controls"] = controls
+params["n_controls"] = len(controls)
 params["input_layer"] = input_layer
 params["output_layer"] = output_layer
 params["neuron_layers"] = neuron_layer
