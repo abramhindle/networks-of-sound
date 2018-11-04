@@ -16,147 +16,177 @@ nchnls	=  2
 ;;;#define SIZE #268435456#
 #define SIZE #4194304#
 
-
-      gao1 init 0
+;;; how many inputs on layer 1?
    
-
-      gao2 init 0
-    \
-      gkw_3_2 init 0
-    \
-      gkw_4_2 init 0
-    \
-      gkw_5_2 init 0
-    \
-      gkw_6_2 init 0
-    \
-      gkw_7_2 init 0
-    \
-      gkw_8_2 init 0
-    \
-      gkw_1_2 init 0
+     gai1 init 0
    
-
-      gao3 init 0
-    \
-      gkw_2_3 init 0
-    \
-      gkw_4_3 init 0
-    \
-      gkw_5_3 init 0
-    \
-      gkw_6_3 init 0
-    \
-      gkw_7_3 init 0
-    \
-      gkw_8_3 init 0
-    \
-      gkw_1_3 init 0
+     gai2 init 0
    
-
-      gao4 init 0
-    \
-      gkw_2_4 init 0
-    \
-      gkw_3_4 init 0
-    \
-      gkw_5_4 init 0
-    \
-      gkw_6_4 init 0
-    \
-      gkw_7_4 init 0
-    \
-      gkw_8_4 init 0
-    \
-      gkw_1_4 init 0
+     gai3 init 0
    
-
-      gao5 init 0
-    \
-      gkw_2_5 init 0
-    \
-      gkw_3_5 init 0
-    \
-      gkw_4_5 init 0
-    \
-      gkw_6_5 init 0
-    \
-      gkw_7_5 init 0
-    \
-      gkw_8_5 init 0
-    \
-      gkw_1_5 init 0
-   
-
-      gao6 init 0
-    \
-      gkw_2_6 init 0
-    \
-      gkw_3_6 init 0
-    \
-      gkw_4_6 init 0
-    \
-      gkw_5_6 init 0
-    \
-      gkw_7_6 init 0
-    \
-      gkw_8_6 init 0
-    \
-      gkw_1_6 init 0
-   
-
-      gao7 init 0
-    \
-      gkw_2_7 init 0
-    \
-      gkw_3_7 init 0
-    \
-      gkw_4_7 init 0
-    \
-      gkw_5_7 init 0
-    \
-      gkw_6_7 init 0
-    \
-      gkw_8_7 init 0
-    \
-      gkw_1_7 init 0
-   
-
-      gao8 init 0
-    \
-      gkw_2_8 init 0
-    \
-      gkw_3_8 init 0
-    \
-      gkw_4_8 init 0
-    \
-      gkw_5_8 init 0
-    \
-      gkw_6_8 init 0
-    \
-      gkw_7_8 init 0
-    \
-      gkw_1_8 init 0
-   
-
-      gao9 init 0
-    \
-      gkw_2_9 init 0
-    \
-      gkw_3_9 init 0
-    \
-      gkw_4_9 init 0
-    \
-      gkw_5_9 init 0
-    \
-      gkw_6_9 init 0
-    \
-      gkw_7_9 init 0
-    \
-      gkw_8_9 init 0
+     gai4 init 0
    
 
 
+
+   
+       \
+      gkw1_0_0 init 0
+       \
+      gkw1_1_0 init 0
+       \
+      gkw1_2_0 init 0
+       \
+      gkw1_3_0 init 0
+      
+   
+       \
+      gkw1_0_1 init 0
+       \
+      gkw1_1_1 init 0
+       \
+      gkw1_2_1 init 0
+       \
+      gkw1_3_1 init 0
+      
+   
+       \
+      gkw1_0_2 init 0
+       \
+      gkw1_1_2 init 0
+       \
+      gkw1_2_2 init 0
+       \
+      gkw1_3_2 init 0
+      
+   
+       \
+      gkw1_0_3 init 0
+       \
+      gkw1_1_3 init 0
+       \
+      gkw1_2_3 init 0
+       \
+      gkw1_3_3 init 0
+      
+   
+       \
+      gkw1_0_4 init 0
+       \
+      gkw1_1_4 init 0
+       \
+      gkw1_2_4 init 0
+       \
+      gkw1_3_4 init 0
+      
+   
+
+   
+       \
+      gkw2_0_0 init 0
+       \
+      gkw2_1_0 init 0
+       \
+      gkw2_2_0 init 0
+       \
+      gkw2_3_0 init 0
+       \
+      gkw2_4_0 init 0
+      
+   
+       \
+      gkw2_0_1 init 0
+       \
+      gkw2_1_1 init 0
+       \
+      gkw2_2_1 init 0
+       \
+      gkw2_3_1 init 0
+       \
+      gkw2_4_1 init 0
+      
+   
+       \
+      gkw2_0_2 init 0
+       \
+      gkw2_1_2 init 0
+       \
+      gkw2_2_2 init 0
+       \
+      gkw2_3_2 init 0
+       \
+      gkw2_4_2 init 0
+      
+   
+       \
+      gkw2_0_3 init 0
+       \
+      gkw2_1_3 init 0
+       \
+      gkw2_2_3 init 0
+       \
+      gkw2_3_3 init 0
+       \
+      gkw2_4_3 init 0
+      
+   
+
+   
+       \
+      gkw3_0_0 init 0
+       \
+      gkw3_1_0 init 0
+       \
+      gkw3_2_0 init 0
+       \
+      gkw3_3_0 init 0
+      
+   
+       \
+      gkw3_0_1 init 0
+       \
+      gkw3_1_1 init 0
+       \
+      gkw3_2_1 init 0
+       \
+      gkw3_3_1 init 0
+      
+   
+       \
+      gkw3_0_2 init 0
+       \
+      gkw3_1_2 init 0
+       \
+      gkw3_2_2 init 0
+       \
+      gkw3_3_2 init 0
+      
+   
+
+   
+       \
+      gkw4_0_0 init 0
+       \
+      gkw4_1_0 init 0
+       \
+      gkw4_2_0 init 0
+      
+   
+       \
+      gkw4_0_1 init 0
+       \
+      gkw4_1_1 init 0
+       \
+      gkw4_2_1 init 0
+      
+   
+
+
+   
+         gao4_0 init 0
+   
+         gao4_1 init 0
+   
 
 
 
@@ -180,215 +210,919 @@ FLcolor	180,200,199
 ;;; w1_1
 
 
-FLpanel "Network",500,1340
+gkSet init 0
+gkGet init 1
+gkShift init 0
+
+FLpanel "Network",500,1110, -1, -1, 5, 1, 1
         imin = -1
         imax = 1
         islw = 500
         islh = 15
         itype = 5
         ioff = islh
-        ibl = 1340 - 50
+        ibl = 1010 - 50
 
    
+    gkw1_0_0, giww1_0_0 FLslider "1_0_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(1)
    
+    gkw1_1_0, giww1_1_0 FLslider "1_1_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(2)
+   
+    gkw1_2_0, giww1_2_0 FLslider "1_2_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(3)
+   
+    gkw1_3_0, giww1_3_0 FLslider "1_3_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(4)
+   
+    gkw1_0_1, giww1_0_1 FLslider "1_0_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(5)
+   
+    gkw1_1_1, giww1_1_1 FLslider "1_1_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(6)
+   
+    gkw1_2_1, giww1_2_1 FLslider "1_2_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(7)
+   
+    gkw1_3_1, giww1_3_1 FLslider "1_3_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(8)
+   
+    gkw1_0_2, giww1_0_2 FLslider "1_0_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(9)
+   
+    gkw1_1_2, giww1_1_2 FLslider "1_1_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(10)
+   
+    gkw1_2_2, giww1_2_2 FLslider "1_2_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(11)
+   
+    gkw1_3_2, giww1_3_2 FLslider "1_3_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(12)
+   
+    gkw1_0_3, giww1_0_3 FLslider "1_0_3", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(13)
+   
+    gkw1_1_3, giww1_1_3 FLslider "1_1_3", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(14)
+   
+    gkw1_2_3, giww1_2_3 FLslider "1_2_3", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(15)
+   
+    gkw1_3_3, giww1_3_3 FLslider "1_3_3", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(16)
+   
+    gkw1_0_4, giww1_0_4 FLslider "1_0_4", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(17)
+   
+    gkw1_1_4, giww1_1_4 FLslider "1_1_4", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(18)
+   
+    gkw1_2_4, giww1_2_4 FLslider "1_2_4", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(19)
+   
+    gkw1_3_4, giww1_3_4 FLslider "1_3_4", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(20)
+   
+   ihandle FLbox "@line", 1, 1, 1, islw, 5, 0, ioff*19
 
    
-    \
-   gkw3_2, giww3_2 FLslider "3_2", imin, imax, 0, itype, -1, islw, islh, 0, 5*2 + ioff*1
-    \
-   gkw4_2, giww4_2 FLslider "4_2", imin, imax, 0, itype, -1, islw, islh, 0, 5*2 + ioff*2
-    \
-   gkw5_2, giww5_2 FLslider "5_2", imin, imax, 0, itype, -1, islw, islh, 0, 5*2 + ioff*3
-    \
-   gkw6_2, giww6_2 FLslider "6_2", imin, imax, 0, itype, -1, islw, islh, 0, 5*2 + ioff*4
-    \
-   gkw7_2, giww7_2 FLslider "7_2", imin, imax, 0, itype, -1, islw, islh, 0, 5*2 + ioff*5
-    \
-   gkw8_2, giww8_2 FLslider "8_2", imin, imax, 0, itype, -1, islw, islh, 0, 5*2 + ioff*6
-    \
-   gkw1_2, giww1_2 FLslider "1_2", imin, imax, 0, itype, -1, islw, islh, 0, 5*2 + ioff*7
+    gkw2_0_0, giww2_0_0 FLslider "2_0_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(22)
    
+    gkw2_1_0, giww2_1_0 FLslider "2_1_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(23)
+   
+    gkw2_2_0, giww2_2_0 FLslider "2_2_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(24)
+   
+    gkw2_3_0, giww2_3_0 FLslider "2_3_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(25)
+   
+    gkw2_4_0, giww2_4_0 FLslider "2_4_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(26)
+   
+    gkw2_0_1, giww2_0_1 FLslider "2_0_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(27)
+   
+    gkw2_1_1, giww2_1_1 FLslider "2_1_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(28)
+   
+    gkw2_2_1, giww2_2_1 FLslider "2_2_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(29)
+   
+    gkw2_3_1, giww2_3_1 FLslider "2_3_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(30)
+   
+    gkw2_4_1, giww2_4_1 FLslider "2_4_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(31)
+   
+    gkw2_0_2, giww2_0_2 FLslider "2_0_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(32)
+   
+    gkw2_1_2, giww2_1_2 FLslider "2_1_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(33)
+   
+    gkw2_2_2, giww2_2_2 FLslider "2_2_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(34)
+   
+    gkw2_3_2, giww2_3_2 FLslider "2_3_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(35)
+   
+    gkw2_4_2, giww2_4_2 FLslider "2_4_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(36)
+   
+    gkw2_0_3, giww2_0_3 FLslider "2_0_3", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(37)
+   
+    gkw2_1_3, giww2_1_3 FLslider "2_1_3", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(38)
+   
+    gkw2_2_3, giww2_2_3 FLslider "2_2_3", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(39)
+   
+    gkw2_3_3, giww2_3_3 FLslider "2_3_3", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(40)
+   
+    gkw2_4_3, giww2_4_3 FLslider "2_4_3", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(41)
+   
+   ihandle FLbox "@line", 1, 1, 1, islw, 5, 0, ioff*39
 
    
-    \
-   gkw2_3, giww2_3 FLslider "2_3", imin, imax, 0, itype, -1, islw, islh, 0, 5*3 + ioff*1
-    \
-   gkw4_3, giww4_3 FLslider "4_3", imin, imax, 0, itype, -1, islw, islh, 0, 5*3 + ioff*2
-    \
-   gkw5_3, giww5_3 FLslider "5_3", imin, imax, 0, itype, -1, islw, islh, 0, 5*3 + ioff*3
-    \
-   gkw6_3, giww6_3 FLslider "6_3", imin, imax, 0, itype, -1, islw, islh, 0, 5*3 + ioff*4
-    \
-   gkw7_3, giww7_3 FLslider "7_3", imin, imax, 0, itype, -1, islw, islh, 0, 5*3 + ioff*5
-    \
-   gkw8_3, giww8_3 FLslider "8_3", imin, imax, 0, itype, -1, islw, islh, 0, 5*3 + ioff*6
-    \
-   gkw1_3, giww1_3 FLslider "1_3", imin, imax, 0, itype, -1, islw, islh, 0, 5*3 + ioff*7
+    gkw3_0_0, giww3_0_0 FLslider "3_0_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(43)
    
+    gkw3_1_0, giww3_1_0 FLslider "3_1_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(44)
+   
+    gkw3_2_0, giww3_2_0 FLslider "3_2_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(45)
+   
+    gkw3_3_0, giww3_3_0 FLslider "3_3_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(46)
+   
+    gkw3_0_1, giww3_0_1 FLslider "3_0_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(47)
+   
+    gkw3_1_1, giww3_1_1 FLslider "3_1_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(48)
+   
+    gkw3_2_1, giww3_2_1 FLslider "3_2_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(49)
+   
+    gkw3_3_1, giww3_3_1 FLslider "3_3_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(50)
+   
+    gkw3_0_2, giww3_0_2 FLslider "3_0_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(51)
+   
+    gkw3_1_2, giww3_1_2 FLslider "3_1_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(52)
+   
+    gkw3_2_2, giww3_2_2 FLslider "3_2_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(53)
+   
+    gkw3_3_2, giww3_3_2 FLslider "3_3_2", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(54)
+   
+   ihandle FLbox "@line", 1, 1, 1, islw, 5, 0, ioff*51
 
    
-    \
-   gkw2_4, giww2_4 FLslider "2_4", imin, imax, 0, itype, -1, islw, islh, 0, 5*4 + ioff*1
-    \
-   gkw3_4, giww3_4 FLslider "3_4", imin, imax, 0, itype, -1, islw, islh, 0, 5*4 + ioff*2
-    \
-   gkw5_4, giww5_4 FLslider "5_4", imin, imax, 0, itype, -1, islw, islh, 0, 5*4 + ioff*3
-    \
-   gkw6_4, giww6_4 FLslider "6_4", imin, imax, 0, itype, -1, islw, islh, 0, 5*4 + ioff*4
-    \
-   gkw7_4, giww7_4 FLslider "7_4", imin, imax, 0, itype, -1, islw, islh, 0, 5*4 + ioff*5
-    \
-   gkw8_4, giww8_4 FLslider "8_4", imin, imax, 0, itype, -1, islw, islh, 0, 5*4 + ioff*6
-    \
-   gkw1_4, giww1_4 FLslider "1_4", imin, imax, 0, itype, -1, islw, islh, 0, 5*4 + ioff*7
+    gkw4_0_0, giww4_0_0 FLslider "4_0_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(56)
    
+    gkw4_1_0, giww4_1_0 FLslider "4_1_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(57)
+   
+    gkw4_2_0, giww4_2_0 FLslider "4_2_0", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(58)
+   
+    gkw4_0_1, giww4_0_1 FLslider "4_0_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(59)
+   
+    gkw4_1_1, giww4_1_1 FLslider "4_1_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(60)
+   
+    gkw4_2_1, giww4_2_1 FLslider "4_2_1", imin, imax, 0, itype, -1, islw, islh, 0, ioff*(61)
+   
+   ihandle FLbox "@line", 1, 1, 1, islw, 5, 0, ioff*57
 
-   
-    \
-   gkw2_5, giww2_5 FLslider "2_5", imin, imax, 0, itype, -1, islw, islh, 0, 5*5 + ioff*1
-    \
-   gkw3_5, giww3_5 FLslider "3_5", imin, imax, 0, itype, -1, islw, islh, 0, 5*5 + ioff*2
-    \
-   gkw4_5, giww4_5 FLslider "4_5", imin, imax, 0, itype, -1, islw, islh, 0, 5*5 + ioff*3
-    \
-   gkw6_5, giww6_5 FLslider "6_5", imin, imax, 0, itype, -1, islw, islh, 0, 5*5 + ioff*4
-    \
-   gkw7_5, giww7_5 FLslider "7_5", imin, imax, 0, itype, -1, islw, islh, 0, 5*5 + ioff*5
-    \
-   gkw8_5, giww8_5 FLslider "8_5", imin, imax, 0, itype, -1, islw, islh, 0, 5*5 + ioff*6
-    \
-   gkw1_5, giww1_5 FLslider "1_5", imin, imax, 0, itype, -1, islw, islh, 0, 5*5 + ioff*7
-   
-
-   
-    \
-   gkw2_6, giww2_6 FLslider "2_6", imin, imax, 0, itype, -1, islw, islh, 0, 5*6 + ioff*1
-    \
-   gkw3_6, giww3_6 FLslider "3_6", imin, imax, 0, itype, -1, islw, islh, 0, 5*6 + ioff*2
-    \
-   gkw4_6, giww4_6 FLslider "4_6", imin, imax, 0, itype, -1, islw, islh, 0, 5*6 + ioff*3
-    \
-   gkw5_6, giww5_6 FLslider "5_6", imin, imax, 0, itype, -1, islw, islh, 0, 5*6 + ioff*4
-    \
-   gkw7_6, giww7_6 FLslider "7_6", imin, imax, 0, itype, -1, islw, islh, 0, 5*6 + ioff*5
-    \
-   gkw8_6, giww8_6 FLslider "8_6", imin, imax, 0, itype, -1, islw, islh, 0, 5*6 + ioff*6
-    \
-   gkw1_6, giww1_6 FLslider "1_6", imin, imax, 0, itype, -1, islw, islh, 0, 5*6 + ioff*7
-   
-
-   
-    \
-   gkw2_7, giww2_7 FLslider "2_7", imin, imax, 0, itype, -1, islw, islh, 0, 5*7 + ioff*1
-    \
-   gkw3_7, giww3_7 FLslider "3_7", imin, imax, 0, itype, -1, islw, islh, 0, 5*7 + ioff*2
-    \
-   gkw4_7, giww4_7 FLslider "4_7", imin, imax, 0, itype, -1, islw, islh, 0, 5*7 + ioff*3
-    \
-   gkw5_7, giww5_7 FLslider "5_7", imin, imax, 0, itype, -1, islw, islh, 0, 5*7 + ioff*4
-    \
-   gkw6_7, giww6_7 FLslider "6_7", imin, imax, 0, itype, -1, islw, islh, 0, 5*7 + ioff*5
-    \
-   gkw8_7, giww8_7 FLslider "8_7", imin, imax, 0, itype, -1, islw, islh, 0, 5*7 + ioff*6
-    \
-   gkw1_7, giww1_7 FLslider "1_7", imin, imax, 0, itype, -1, islw, islh, 0, 5*7 + ioff*7
-   
-
-   
-    \
-   gkw2_8, giww2_8 FLslider "2_8", imin, imax, 0, itype, -1, islw, islh, 0, 5*8 + ioff*1
-    \
-   gkw3_8, giww3_8 FLslider "3_8", imin, imax, 0, itype, -1, islw, islh, 0, 5*8 + ioff*2
-    \
-   gkw4_8, giww4_8 FLslider "4_8", imin, imax, 0, itype, -1, islw, islh, 0, 5*8 + ioff*3
-    \
-   gkw5_8, giww5_8 FLslider "5_8", imin, imax, 0, itype, -1, islw, islh, 0, 5*8 + ioff*4
-    \
-   gkw6_8, giww6_8 FLslider "6_8", imin, imax, 0, itype, -1, islw, islh, 0, 5*8 + ioff*5
-    \
-   gkw7_8, giww7_8 FLslider "7_8", imin, imax, 0, itype, -1, islw, islh, 0, 5*8 + ioff*6
-    \
-   gkw1_8, giww1_8 FLslider "1_8", imin, imax, 0, itype, -1, islw, islh, 0, 5*8 + ioff*7
-   
-
-   
-    \
-   gkw2_9, giww2_9 FLslider "2_9", imin, imax, 0, itype, -1, islw, islh, 0, 5*9 + ioff*1
-    \
-   gkw3_9, giww3_9 FLslider "3_9", imin, imax, 0, itype, -1, islw, islh, 0, 5*9 + ioff*2
-    \
-   gkw4_9, giww4_9 FLslider "4_9", imin, imax, 0, itype, -1, islw, islh, 0, 5*9 + ioff*3
-    \
-   gkw5_9, giww5_9 FLslider "5_9", imin, imax, 0, itype, -1, islw, islh, 0, 5*9 + ioff*4
-    \
-   gkw6_9, giww6_9 FLslider "6_9", imin, imax, 0, itype, -1, islw, islh, 0, 5*9 + ioff*5
-    \
-   gkw7_9, giww7_9 FLslider "7_9", imin, imax, 0, itype, -1, islw, islh, 0, 5*9 + ioff*6
-    \
-   gkw8_9, giww8_9 FLslider "8_9", imin, imax, 0, itype, -1, islw, islh, 0, 5*9 + ioff*7
-   
+   kbz, ibz FLbutton "0"      ,    1, 0, 11, 50, 50,   0, ibl, 105, 1000, 0, kr/sr
+   kbz, ibz FLbutton "Random1",    1, 0, 11, 50, 50,  50, ibl, 105,  701, 0, kr/sr
+   kbz, ibz FLbutton "Random2",    1, 0, 11, 50, 50, 100, ibl, 105,  702, 0, kr/sr
+   kbz, ibz FLbutton "Random*",    1, 0, 11, 50, 50, 150, ibl, 105,  666, 0, kr/sr
+   kbz, ibz FLbutton "Random*[1]", 1, 0, 11, 50, 50, 200, ibl, 105,  667, 0, kr/sr
+   kbz, ibz FLbutton "90%"    ,    1, 0, 11, 50, 50, 250, ibl, 105,  800, 0, kr/sr, 0.9
+   kbz, ibz FLbutton "110%",       1, 0, 11, 50, 50, 300, ibl, 105,  800, 0, kr/sr, 1.1  
 
 
-   kbz, ibz FLbutton "0"      ,    1, 0, 1, 50, 50,   0, ibl, 105, 1000, 0, kr/sr
-   kbz, ibz FLbutton "Random1",    1, 0, 1, 50, 50,  50, ibl, 105,  701, 0, kr/sr
-   kbz, ibz FLbutton "Random2",    1, 0, 1, 50, 50, 100, ibl, 105,  702, 0, kr/sr
-   kbz, ibz FLbutton "Random*",    1, 0, 1, 50, 50, 150, ibl, 105,  666, 0, kr/sr
-   kbz, ibz FLbutton "Random*[1]", 1, 0, 1, 50, 50, 200, ibl, 105,  667, 0, kr/sr
-   kbz, ibz FLbutton "90%"    ,    1, 0, 1, 50, 50, 250, ibl, 105,  800, 0, kr/sr, 0.9
-   kbz, ibz FLbutton "110%",       1, 0, 1, 50, 50, 300, ibl, 105,  800, 0, kr/sr, 1.1  
+   kbz, ibz FLbutton "SAVE",       1, 0, 11, 50, 50, 350, ibl, 105,  6001, 0, 1.0
+   kbz, ibz FLbutton "LOAD",       1, 0, 11, 50, 50, 400, ibl, 105,  6000, 0, 1.0
+;; kout, ihandle FLbutBank itype, inumx, inumy, iwidth, iheight, ix, iy, \
+;;      iopcode [, kp1] [, kp2] [, kp3] [, kp4] [, kp5] [....] [, kpN]
+   gkGet,ih1	FLbutBank	11, 10,1,  500,50, 0,ibl+50   ,0,6000,0,kr/sr
+   gkSet,ih2	FLbutBank	11, 10,1,  500,50, 0,ibl+50+50,0,6001,0,kr/sr
 
-FLpanel_end	;***** end of container
+FLpanelEnd	;***** end of container
 
 FLrun		;***** runs the widget thread 
 
 instr 1
+kascii   FLkeyIn
+ktrig changed kascii
+if (kascii > 0) then
+  if (ktrig > 0 && kascii >= 481 && kascii <= 482) then
+    gkShift = 1
+  endif
+  if (ktrig > 0 && kascii >= 48 && kascii <= 57) then
+    if (gkShift > 0) then
+       printf "Set State: %i\n", ktrig, kascii
+       event "i", 6011, 0, 0, kascii - 48
+    else
+       printf "Get State: %i\n", ktrig, kascii
+       event "i", 6010, 0, 0, kascii - 48
+    endif
+  endif
+  printf "Key Down: %i\n", ktrig, kascii
+else
+  if (ktrig > 0 && kascii >= -482 && kascii <= -481) then
+    gkShift = 0
+  endif
+  printf "Key Up: %i\n", ktrig, -kascii
+endif
 endin
 
+
+gkSaved init 0
+gkLoad init 0
+
+
+	instr	6000
+	inumel	FLgetsnap	i(gkGet)
+        printf_i "GET SNAP %i\n", 1, i(gkGet)
+        printf_i "inumel %i \n", 1, inumel
+        endin
+	instr	6010
+        igkget = p4
+	inumel	FLgetsnap	igkget
+        printf_i "GET SNAP %i\n", 1, igkget
+        printf_i "inumel %i \n", 1, inumel
+        endin
+
+	instr	6001
+        printf_i "SET SNAP %i\n", 1, i(gkSet)
+	isnap, inumel	FLsetsnap i(gkSet)
+        printf_i "isnap inumel %i %i \n", 1, isnap, inumel
+        endin
+	instr	6011
+        igkset = p4
+        printf_i "SET SNAP %i\n", 1, igkset
+	isnap, inumel	FLsetsnap igkset
+        printf_i "isnap inumel %i %i \n", 1, isnap, inumel
+        endin
+
 instr 100
-   ;;; get inputs
-   ai1, ai2 ins
+   gai1, gai2 ins
+   gai3 delayr 1*kr/sr
+   gai4 delayr 2*kr/sr  
    
-      gao1 = ai1
+      ao0_0 = gai1
    
-
-   ;;; setup the neurons
+      ao0_1 = gai2
    
-      ao1 delay1 gao1
+      ao0_2 = gai3
    
-      ao2 delay1 gao2
-   
-      ao3 delay1 gao3
-   
-      ao4 delay1 gao4
-   
-      ao5 delay1 gao5
-   
-      ao6 delay1 gao6
-   
-      ao7 delay1 gao7
-   
-      ao8 delay1 gao8
-   
-      ao9 delay1 gao9
+      ao0_3 = gai4
    
 
 
+
+   
+      ao1_0 = tanh(1.0*(
+       \
+      gkw1_0_0*ao0_0 + \
+       \
+      gkw1_1_0*ao0_1 + \
+       \
+      gkw1_2_0*ao0_2 + \
+       \
+      gkw1_3_0*ao0_3  \
+       \
+      ))
+   
+      ao1_1 = tanh(1.0*(
+       \
+      gkw1_0_1*ao0_0 + \
+       \
+      gkw1_1_1*ao0_1 + \
+       \
+      gkw1_2_1*ao0_2 + \
+       \
+      gkw1_3_1*ao0_3  \
+       \
+      ))
+   
+      ao1_2 = tanh(1.0*(
+       \
+      gkw1_0_2*ao0_0 + \
+       \
+      gkw1_1_2*ao0_1 + \
+       \
+      gkw1_2_2*ao0_2 + \
+       \
+      gkw1_3_2*ao0_3  \
+       \
+      ))
+   
+      ao1_3 = tanh(1.0*(
+       \
+      gkw1_0_3*ao0_0 + \
+       \
+      gkw1_1_3*ao0_1 + \
+       \
+      gkw1_2_3*ao0_2 + \
+       \
+      gkw1_3_3*ao0_3  \
+       \
+      ))
+   
+      ao1_4 = tanh(1.0*(
+       \
+      gkw1_0_4*ao0_0 + \
+       \
+      gkw1_1_4*ao0_1 + \
+       \
+      gkw1_2_4*ao0_2 + \
+       \
+      gkw1_3_4*ao0_3  \
+       \
+      ))
+   
+
+   
+      ao2_0 = tanh(1.0*(
+       \
+      gkw2_0_0*ao1_0 + \
+       \
+      gkw2_1_0*ao1_1 + \
+       \
+      gkw2_2_0*ao1_2 + \
+       \
+      gkw2_3_0*ao1_3 + \
+       \
+      gkw2_4_0*ao1_4  \
+       \
+      ))
+   
+      ao2_1 = tanh(1.0*(
+       \
+      gkw2_0_1*ao1_0 + \
+       \
+      gkw2_1_1*ao1_1 + \
+       \
+      gkw2_2_1*ao1_2 + \
+       \
+      gkw2_3_1*ao1_3 + \
+       \
+      gkw2_4_1*ao1_4  \
+       \
+      ))
+   
+      ao2_2 = tanh(1.0*(
+       \
+      gkw2_0_2*ao1_0 + \
+       \
+      gkw2_1_2*ao1_1 + \
+       \
+      gkw2_2_2*ao1_2 + \
+       \
+      gkw2_3_2*ao1_3 + \
+       \
+      gkw2_4_2*ao1_4  \
+       \
+      ))
+   
+      ao2_3 = tanh(1.0*(
+       \
+      gkw2_0_3*ao1_0 + \
+       \
+      gkw2_1_3*ao1_1 + \
+       \
+      gkw2_2_3*ao1_2 + \
+       \
+      gkw2_3_3*ao1_3 + \
+       \
+      gkw2_4_3*ao1_4  \
+       \
+      ))
+   
+
+   
+      ao3_0 = tanh(1.0*(
+       \
+      gkw3_0_0*ao2_0 + \
+       \
+      gkw3_1_0*ao2_1 + \
+       \
+      gkw3_2_0*ao2_2 + \
+       \
+      gkw3_3_0*ao2_3  \
+       \
+      ))
+   
+      ao3_1 = tanh(1.0*(
+       \
+      gkw3_0_1*ao2_0 + \
+       \
+      gkw3_1_1*ao2_1 + \
+       \
+      gkw3_2_1*ao2_2 + \
+       \
+      gkw3_3_1*ao2_3  \
+       \
+      ))
+   
+      ao3_2 = tanh(1.0*(
+       \
+      gkw3_0_2*ao2_0 + \
+       \
+      gkw3_1_2*ao2_1 + \
+       \
+      gkw3_2_2*ao2_2 + \
+       \
+      gkw3_3_2*ao2_3  \
+       \
+      ))
+   
+
+   
+      ao4_0 = tanh(1.0*(
+       \
+      gkw4_0_0*ao3_0 + \
+       \
+      gkw4_1_0*ao3_1 + \
+       \
+      gkw4_2_0*ao3_2  \
+       \
+      ))
+   
+      ao4_1 = tanh(1.0*(
+       \
+      gkw4_0_1*ao3_0 + \
+       \
+      gkw4_1_1*ao3_1 + \
+       \
+      gkw4_2_1*ao3_2  \
+       \
+      ))
    
 
 
-   outs  \
-        gao9  \
-        
+   
+         gao4_0 = ao4_0
+   
+         gao4_1 = ao4_1
+   
+
+   ao1 clip ao4_0,2,1
+   ao2 clip ao4_1,2,1
+   
+   outs ao1, ao2
+   delayw ao1
+   delayw ao2
 
 endin
 
 instr 1000;;;; "zero"
+
    
+       
+      gkw1_0_0 = 0
+      FLsetVal_i 0, giww1_0_0
+       
+      gkw1_1_0 = 0
+      FLsetVal_i 0, giww1_1_0
+       
+      gkw1_2_0 = 0
+      FLsetVal_i 0, giww1_2_0
+       
+      gkw1_3_0 = 0
+      FLsetVal_i 0, giww1_3_0
+       
+   
+       
+      gkw1_0_1 = 0
+      FLsetVal_i 0, giww1_0_1
+       
+      gkw1_1_1 = 0
+      FLsetVal_i 0, giww1_1_1
+       
+      gkw1_2_1 = 0
+      FLsetVal_i 0, giww1_2_1
+       
+      gkw1_3_1 = 0
+      FLsetVal_i 0, giww1_3_1
+       
+   
+       
+      gkw1_0_2 = 0
+      FLsetVal_i 0, giww1_0_2
+       
+      gkw1_1_2 = 0
+      FLsetVal_i 0, giww1_1_2
+       
+      gkw1_2_2 = 0
+      FLsetVal_i 0, giww1_2_2
+       
+      gkw1_3_2 = 0
+      FLsetVal_i 0, giww1_3_2
+       
+   
+       
+      gkw1_0_3 = 0
+      FLsetVal_i 0, giww1_0_3
+       
+      gkw1_1_3 = 0
+      FLsetVal_i 0, giww1_1_3
+       
+      gkw1_2_3 = 0
+      FLsetVal_i 0, giww1_2_3
+       
+      gkw1_3_3 = 0
+      FLsetVal_i 0, giww1_3_3
+       
+   
+       
+      gkw1_0_4 = 0
+      FLsetVal_i 0, giww1_0_4
+       
+      gkw1_1_4 = 0
+      FLsetVal_i 0, giww1_1_4
+       
+      gkw1_2_4 = 0
+      FLsetVal_i 0, giww1_2_4
+       
+      gkw1_3_4 = 0
+      FLsetVal_i 0, giww1_3_4
+       
+   
+
+   
+       
+      gkw2_0_0 = 0
+      FLsetVal_i 0, giww2_0_0
+       
+      gkw2_1_0 = 0
+      FLsetVal_i 0, giww2_1_0
+       
+      gkw2_2_0 = 0
+      FLsetVal_i 0, giww2_2_0
+       
+      gkw2_3_0 = 0
+      FLsetVal_i 0, giww2_3_0
+       
+      gkw2_4_0 = 0
+      FLsetVal_i 0, giww2_4_0
+       
+   
+       
+      gkw2_0_1 = 0
+      FLsetVal_i 0, giww2_0_1
+       
+      gkw2_1_1 = 0
+      FLsetVal_i 0, giww2_1_1
+       
+      gkw2_2_1 = 0
+      FLsetVal_i 0, giww2_2_1
+       
+      gkw2_3_1 = 0
+      FLsetVal_i 0, giww2_3_1
+       
+      gkw2_4_1 = 0
+      FLsetVal_i 0, giww2_4_1
+       
+   
+       
+      gkw2_0_2 = 0
+      FLsetVal_i 0, giww2_0_2
+       
+      gkw2_1_2 = 0
+      FLsetVal_i 0, giww2_1_2
+       
+      gkw2_2_2 = 0
+      FLsetVal_i 0, giww2_2_2
+       
+      gkw2_3_2 = 0
+      FLsetVal_i 0, giww2_3_2
+       
+      gkw2_4_2 = 0
+      FLsetVal_i 0, giww2_4_2
+       
+   
+       
+      gkw2_0_3 = 0
+      FLsetVal_i 0, giww2_0_3
+       
+      gkw2_1_3 = 0
+      FLsetVal_i 0, giww2_1_3
+       
+      gkw2_2_3 = 0
+      FLsetVal_i 0, giww2_2_3
+       
+      gkw2_3_3 = 0
+      FLsetVal_i 0, giww2_3_3
+       
+      gkw2_4_3 = 0
+      FLsetVal_i 0, giww2_4_3
+       
+   
+
+   
+       
+      gkw3_0_0 = 0
+      FLsetVal_i 0, giww3_0_0
+       
+      gkw3_1_0 = 0
+      FLsetVal_i 0, giww3_1_0
+       
+      gkw3_2_0 = 0
+      FLsetVal_i 0, giww3_2_0
+       
+      gkw3_3_0 = 0
+      FLsetVal_i 0, giww3_3_0
+       
+   
+       
+      gkw3_0_1 = 0
+      FLsetVal_i 0, giww3_0_1
+       
+      gkw3_1_1 = 0
+      FLsetVal_i 0, giww3_1_1
+       
+      gkw3_2_1 = 0
+      FLsetVal_i 0, giww3_2_1
+       
+      gkw3_3_1 = 0
+      FLsetVal_i 0, giww3_3_1
+       
+   
+       
+      gkw3_0_2 = 0
+      FLsetVal_i 0, giww3_0_2
+       
+      gkw3_1_2 = 0
+      FLsetVal_i 0, giww3_1_2
+       
+      gkw3_2_2 = 0
+      FLsetVal_i 0, giww3_2_2
+       
+      gkw3_3_2 = 0
+      FLsetVal_i 0, giww3_3_2
+       
+   
+
+   
+       
+      gkw4_0_0 = 0
+      FLsetVal_i 0, giww4_0_0
+       
+      gkw4_1_0 = 0
+      FLsetVal_i 0, giww4_1_0
+       
+      gkw4_2_0 = 0
+      FLsetVal_i 0, giww4_2_0
+       
+   
+       
+      gkw4_0_1 = 0
+      FLsetVal_i 0, giww4_0_1
+       
+      gkw4_1_1 = 0
+      FLsetVal_i 0, giww4_1_1
+       
+      gkw4_2_1 = 0
+      FLsetVal_i 0, giww4_2_1
+       
+   
+
       p3 = 0      
 endin
 
 instr 666 ;;;;
+
    
+       
+      iv_1_0_0 = rnd(2) - 1
+      gkw1_0_0 = iv_1_0_0
+      FLsetVal_i iv_1_0_0, giww1_0_0
+       
+      iv_1_1_0 = rnd(2) - 1
+      gkw1_1_0 = iv_1_1_0
+      FLsetVal_i iv_1_1_0, giww1_1_0
+       
+      iv_1_2_0 = rnd(2) - 1
+      gkw1_2_0 = iv_1_2_0
+      FLsetVal_i iv_1_2_0, giww1_2_0
+       
+      iv_1_3_0 = rnd(2) - 1
+      gkw1_3_0 = iv_1_3_0
+      FLsetVal_i iv_1_3_0, giww1_3_0
+       
+   
+       
+      iv_1_0_1 = rnd(2) - 1
+      gkw1_0_1 = iv_1_0_1
+      FLsetVal_i iv_1_0_1, giww1_0_1
+       
+      iv_1_1_1 = rnd(2) - 1
+      gkw1_1_1 = iv_1_1_1
+      FLsetVal_i iv_1_1_1, giww1_1_1
+       
+      iv_1_2_1 = rnd(2) - 1
+      gkw1_2_1 = iv_1_2_1
+      FLsetVal_i iv_1_2_1, giww1_2_1
+       
+      iv_1_3_1 = rnd(2) - 1
+      gkw1_3_1 = iv_1_3_1
+      FLsetVal_i iv_1_3_1, giww1_3_1
+       
+   
+       
+      iv_1_0_2 = rnd(2) - 1
+      gkw1_0_2 = iv_1_0_2
+      FLsetVal_i iv_1_0_2, giww1_0_2
+       
+      iv_1_1_2 = rnd(2) - 1
+      gkw1_1_2 = iv_1_1_2
+      FLsetVal_i iv_1_1_2, giww1_1_2
+       
+      iv_1_2_2 = rnd(2) - 1
+      gkw1_2_2 = iv_1_2_2
+      FLsetVal_i iv_1_2_2, giww1_2_2
+       
+      iv_1_3_2 = rnd(2) - 1
+      gkw1_3_2 = iv_1_3_2
+      FLsetVal_i iv_1_3_2, giww1_3_2
+       
+   
+       
+      iv_1_0_3 = rnd(2) - 1
+      gkw1_0_3 = iv_1_0_3
+      FLsetVal_i iv_1_0_3, giww1_0_3
+       
+      iv_1_1_3 = rnd(2) - 1
+      gkw1_1_3 = iv_1_1_3
+      FLsetVal_i iv_1_1_3, giww1_1_3
+       
+      iv_1_2_3 = rnd(2) - 1
+      gkw1_2_3 = iv_1_2_3
+      FLsetVal_i iv_1_2_3, giww1_2_3
+       
+      iv_1_3_3 = rnd(2) - 1
+      gkw1_3_3 = iv_1_3_3
+      FLsetVal_i iv_1_3_3, giww1_3_3
+       
+   
+       
+      iv_1_0_4 = rnd(2) - 1
+      gkw1_0_4 = iv_1_0_4
+      FLsetVal_i iv_1_0_4, giww1_0_4
+       
+      iv_1_1_4 = rnd(2) - 1
+      gkw1_1_4 = iv_1_1_4
+      FLsetVal_i iv_1_1_4, giww1_1_4
+       
+      iv_1_2_4 = rnd(2) - 1
+      gkw1_2_4 = iv_1_2_4
+      FLsetVal_i iv_1_2_4, giww1_2_4
+       
+      iv_1_3_4 = rnd(2) - 1
+      gkw1_3_4 = iv_1_3_4
+      FLsetVal_i iv_1_3_4, giww1_3_4
+       
+   
+
+   
+       
+      iv_2_0_0 = rnd(2) - 1
+      gkw2_0_0 = iv_2_0_0
+      FLsetVal_i iv_2_0_0, giww2_0_0
+       
+      iv_2_1_0 = rnd(2) - 1
+      gkw2_1_0 = iv_2_1_0
+      FLsetVal_i iv_2_1_0, giww2_1_0
+       
+      iv_2_2_0 = rnd(2) - 1
+      gkw2_2_0 = iv_2_2_0
+      FLsetVal_i iv_2_2_0, giww2_2_0
+       
+      iv_2_3_0 = rnd(2) - 1
+      gkw2_3_0 = iv_2_3_0
+      FLsetVal_i iv_2_3_0, giww2_3_0
+       
+      iv_2_4_0 = rnd(2) - 1
+      gkw2_4_0 = iv_2_4_0
+      FLsetVal_i iv_2_4_0, giww2_4_0
+       
+   
+       
+      iv_2_0_1 = rnd(2) - 1
+      gkw2_0_1 = iv_2_0_1
+      FLsetVal_i iv_2_0_1, giww2_0_1
+       
+      iv_2_1_1 = rnd(2) - 1
+      gkw2_1_1 = iv_2_1_1
+      FLsetVal_i iv_2_1_1, giww2_1_1
+       
+      iv_2_2_1 = rnd(2) - 1
+      gkw2_2_1 = iv_2_2_1
+      FLsetVal_i iv_2_2_1, giww2_2_1
+       
+      iv_2_3_1 = rnd(2) - 1
+      gkw2_3_1 = iv_2_3_1
+      FLsetVal_i iv_2_3_1, giww2_3_1
+       
+      iv_2_4_1 = rnd(2) - 1
+      gkw2_4_1 = iv_2_4_1
+      FLsetVal_i iv_2_4_1, giww2_4_1
+       
+   
+       
+      iv_2_0_2 = rnd(2) - 1
+      gkw2_0_2 = iv_2_0_2
+      FLsetVal_i iv_2_0_2, giww2_0_2
+       
+      iv_2_1_2 = rnd(2) - 1
+      gkw2_1_2 = iv_2_1_2
+      FLsetVal_i iv_2_1_2, giww2_1_2
+       
+      iv_2_2_2 = rnd(2) - 1
+      gkw2_2_2 = iv_2_2_2
+      FLsetVal_i iv_2_2_2, giww2_2_2
+       
+      iv_2_3_2 = rnd(2) - 1
+      gkw2_3_2 = iv_2_3_2
+      FLsetVal_i iv_2_3_2, giww2_3_2
+       
+      iv_2_4_2 = rnd(2) - 1
+      gkw2_4_2 = iv_2_4_2
+      FLsetVal_i iv_2_4_2, giww2_4_2
+       
+   
+       
+      iv_2_0_3 = rnd(2) - 1
+      gkw2_0_3 = iv_2_0_3
+      FLsetVal_i iv_2_0_3, giww2_0_3
+       
+      iv_2_1_3 = rnd(2) - 1
+      gkw2_1_3 = iv_2_1_3
+      FLsetVal_i iv_2_1_3, giww2_1_3
+       
+      iv_2_2_3 = rnd(2) - 1
+      gkw2_2_3 = iv_2_2_3
+      FLsetVal_i iv_2_2_3, giww2_2_3
+       
+      iv_2_3_3 = rnd(2) - 1
+      gkw2_3_3 = iv_2_3_3
+      FLsetVal_i iv_2_3_3, giww2_3_3
+       
+      iv_2_4_3 = rnd(2) - 1
+      gkw2_4_3 = iv_2_4_3
+      FLsetVal_i iv_2_4_3, giww2_4_3
+       
+   
+
+   
+       
+      iv_3_0_0 = rnd(2) - 1
+      gkw3_0_0 = iv_3_0_0
+      FLsetVal_i iv_3_0_0, giww3_0_0
+       
+      iv_3_1_0 = rnd(2) - 1
+      gkw3_1_0 = iv_3_1_0
+      FLsetVal_i iv_3_1_0, giww3_1_0
+       
+      iv_3_2_0 = rnd(2) - 1
+      gkw3_2_0 = iv_3_2_0
+      FLsetVal_i iv_3_2_0, giww3_2_0
+       
+      iv_3_3_0 = rnd(2) - 1
+      gkw3_3_0 = iv_3_3_0
+      FLsetVal_i iv_3_3_0, giww3_3_0
+       
+   
+       
+      iv_3_0_1 = rnd(2) - 1
+      gkw3_0_1 = iv_3_0_1
+      FLsetVal_i iv_3_0_1, giww3_0_1
+       
+      iv_3_1_1 = rnd(2) - 1
+      gkw3_1_1 = iv_3_1_1
+      FLsetVal_i iv_3_1_1, giww3_1_1
+       
+      iv_3_2_1 = rnd(2) - 1
+      gkw3_2_1 = iv_3_2_1
+      FLsetVal_i iv_3_2_1, giww3_2_1
+       
+      iv_3_3_1 = rnd(2) - 1
+      gkw3_3_1 = iv_3_3_1
+      FLsetVal_i iv_3_3_1, giww3_3_1
+       
+   
+       
+      iv_3_0_2 = rnd(2) - 1
+      gkw3_0_2 = iv_3_0_2
+      FLsetVal_i iv_3_0_2, giww3_0_2
+       
+      iv_3_1_2 = rnd(2) - 1
+      gkw3_1_2 = iv_3_1_2
+      FLsetVal_i iv_3_1_2, giww3_1_2
+       
+      iv_3_2_2 = rnd(2) - 1
+      gkw3_2_2 = iv_3_2_2
+      FLsetVal_i iv_3_2_2, giww3_2_2
+       
+      iv_3_3_2 = rnd(2) - 1
+      gkw3_3_2 = iv_3_3_2
+      FLsetVal_i iv_3_3_2, giww3_3_2
+       
+   
+
+   
+       
+      iv_4_0_0 = rnd(2) - 1
+      gkw4_0_0 = iv_4_0_0
+      FLsetVal_i iv_4_0_0, giww4_0_0
+       
+      iv_4_1_0 = rnd(2) - 1
+      gkw4_1_0 = iv_4_1_0
+      FLsetVal_i iv_4_1_0, giww4_1_0
+       
+      iv_4_2_0 = rnd(2) - 1
+      gkw4_2_0 = iv_4_2_0
+      FLsetVal_i iv_4_2_0, giww4_2_0
+       
+   
+       
+      iv_4_0_1 = rnd(2) - 1
+      gkw4_0_1 = iv_4_0_1
+      FLsetVal_i iv_4_0_1, giww4_0_1
+       
+      iv_4_1_1 = rnd(2) - 1
+      gkw4_1_1 = iv_4_1_1
+      FLsetVal_i iv_4_1_1, giww4_1_1
+       
+      iv_4_2_1 = rnd(2) - 1
+      gkw4_2_1 = iv_4_2_1
+      FLsetVal_i iv_4_2_1, giww4_2_1
+       
+   
+
+
       p3 = 0
 endin
 
@@ -396,8 +1130,449 @@ endin
 instr 667 ;;;; choose 1
 
    
-      p3 = 0
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_0_0 = rnd(2) - 1
+         gkw1_0_0 = iv_1_0_0
+         FLsetVal_i iv_1_0_0, giww1_0_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_1_0 = rnd(2) - 1
+         gkw1_1_0 = iv_1_1_0
+         FLsetVal_i iv_1_1_0, giww1_1_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_2_0 = rnd(2) - 1
+         gkw1_2_0 = iv_1_2_0
+         FLsetVal_i iv_1_2_0, giww1_2_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_3_0 = rnd(2) - 1
+         gkw1_3_0 = iv_1_3_0
+         FLsetVal_i iv_1_3_0, giww1_3_0
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_0_1 = rnd(2) - 1
+         gkw1_0_1 = iv_1_0_1
+         FLsetVal_i iv_1_0_1, giww1_0_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_1_1 = rnd(2) - 1
+         gkw1_1_1 = iv_1_1_1
+         FLsetVal_i iv_1_1_1, giww1_1_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_2_1 = rnd(2) - 1
+         gkw1_2_1 = iv_1_2_1
+         FLsetVal_i iv_1_2_1, giww1_2_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_3_1 = rnd(2) - 1
+         gkw1_3_1 = iv_1_3_1
+         FLsetVal_i iv_1_3_1, giww1_3_1
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_0_2 = rnd(2) - 1
+         gkw1_0_2 = iv_1_0_2
+         FLsetVal_i iv_1_0_2, giww1_0_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_1_2 = rnd(2) - 1
+         gkw1_1_2 = iv_1_1_2
+         FLsetVal_i iv_1_1_2, giww1_1_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_2_2 = rnd(2) - 1
+         gkw1_2_2 = iv_1_2_2
+         FLsetVal_i iv_1_2_2, giww1_2_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_3_2 = rnd(2) - 1
+         gkw1_3_2 = iv_1_3_2
+         FLsetVal_i iv_1_3_2, giww1_3_2
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_0_3 = rnd(2) - 1
+         gkw1_0_3 = iv_1_0_3
+         FLsetVal_i iv_1_0_3, giww1_0_3
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_1_3 = rnd(2) - 1
+         gkw1_1_3 = iv_1_1_3
+         FLsetVal_i iv_1_1_3, giww1_1_3
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_2_3 = rnd(2) - 1
+         gkw1_2_3 = iv_1_2_3
+         FLsetVal_i iv_1_2_3, giww1_2_3
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_3_3 = rnd(2) - 1
+         gkw1_3_3 = iv_1_3_3
+         FLsetVal_i iv_1_3_3, giww1_3_3
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_0_4 = rnd(2) - 1
+         gkw1_0_4 = iv_1_0_4
+         FLsetVal_i iv_1_0_4, giww1_0_4
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_1_4 = rnd(2) - 1
+         gkw1_1_4 = iv_1_1_4
+         FLsetVal_i iv_1_1_4, giww1_1_4
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_2_4 = rnd(2) - 1
+         gkw1_2_4 = iv_1_2_4
+         FLsetVal_i iv_1_2_4, giww1_2_4
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_1_3_4 = rnd(2) - 1
+         gkw1_3_4 = iv_1_3_4
+         FLsetVal_i iv_1_3_4, giww1_3_4
+      endif
+       
+   
 
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_0_0 = rnd(2) - 1
+         gkw2_0_0 = iv_2_0_0
+         FLsetVal_i iv_2_0_0, giww2_0_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_1_0 = rnd(2) - 1
+         gkw2_1_0 = iv_2_1_0
+         FLsetVal_i iv_2_1_0, giww2_1_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_2_0 = rnd(2) - 1
+         gkw2_2_0 = iv_2_2_0
+         FLsetVal_i iv_2_2_0, giww2_2_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_3_0 = rnd(2) - 1
+         gkw2_3_0 = iv_2_3_0
+         FLsetVal_i iv_2_3_0, giww2_3_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_4_0 = rnd(2) - 1
+         gkw2_4_0 = iv_2_4_0
+         FLsetVal_i iv_2_4_0, giww2_4_0
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_0_1 = rnd(2) - 1
+         gkw2_0_1 = iv_2_0_1
+         FLsetVal_i iv_2_0_1, giww2_0_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_1_1 = rnd(2) - 1
+         gkw2_1_1 = iv_2_1_1
+         FLsetVal_i iv_2_1_1, giww2_1_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_2_1 = rnd(2) - 1
+         gkw2_2_1 = iv_2_2_1
+         FLsetVal_i iv_2_2_1, giww2_2_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_3_1 = rnd(2) - 1
+         gkw2_3_1 = iv_2_3_1
+         FLsetVal_i iv_2_3_1, giww2_3_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_4_1 = rnd(2) - 1
+         gkw2_4_1 = iv_2_4_1
+         FLsetVal_i iv_2_4_1, giww2_4_1
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_0_2 = rnd(2) - 1
+         gkw2_0_2 = iv_2_0_2
+         FLsetVal_i iv_2_0_2, giww2_0_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_1_2 = rnd(2) - 1
+         gkw2_1_2 = iv_2_1_2
+         FLsetVal_i iv_2_1_2, giww2_1_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_2_2 = rnd(2) - 1
+         gkw2_2_2 = iv_2_2_2
+         FLsetVal_i iv_2_2_2, giww2_2_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_3_2 = rnd(2) - 1
+         gkw2_3_2 = iv_2_3_2
+         FLsetVal_i iv_2_3_2, giww2_3_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_4_2 = rnd(2) - 1
+         gkw2_4_2 = iv_2_4_2
+         FLsetVal_i iv_2_4_2, giww2_4_2
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_0_3 = rnd(2) - 1
+         gkw2_0_3 = iv_2_0_3
+         FLsetVal_i iv_2_0_3, giww2_0_3
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_1_3 = rnd(2) - 1
+         gkw2_1_3 = iv_2_1_3
+         FLsetVal_i iv_2_1_3, giww2_1_3
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_2_3 = rnd(2) - 1
+         gkw2_2_3 = iv_2_2_3
+         FLsetVal_i iv_2_2_3, giww2_2_3
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_3_3 = rnd(2) - 1
+         gkw2_3_3 = iv_2_3_3
+         FLsetVal_i iv_2_3_3, giww2_3_3
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_2_4_3 = rnd(2) - 1
+         gkw2_4_3 = iv_2_4_3
+         FLsetVal_i iv_2_4_3, giww2_4_3
+      endif
+       
+   
+
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_0_0 = rnd(2) - 1
+         gkw3_0_0 = iv_3_0_0
+         FLsetVal_i iv_3_0_0, giww3_0_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_1_0 = rnd(2) - 1
+         gkw3_1_0 = iv_3_1_0
+         FLsetVal_i iv_3_1_0, giww3_1_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_2_0 = rnd(2) - 1
+         gkw3_2_0 = iv_3_2_0
+         FLsetVal_i iv_3_2_0, giww3_2_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_3_0 = rnd(2) - 1
+         gkw3_3_0 = iv_3_3_0
+         FLsetVal_i iv_3_3_0, giww3_3_0
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_0_1 = rnd(2) - 1
+         gkw3_0_1 = iv_3_0_1
+         FLsetVal_i iv_3_0_1, giww3_0_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_1_1 = rnd(2) - 1
+         gkw3_1_1 = iv_3_1_1
+         FLsetVal_i iv_3_1_1, giww3_1_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_2_1 = rnd(2) - 1
+         gkw3_2_1 = iv_3_2_1
+         FLsetVal_i iv_3_2_1, giww3_2_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_3_1 = rnd(2) - 1
+         gkw3_3_1 = iv_3_3_1
+         FLsetVal_i iv_3_3_1, giww3_3_1
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_0_2 = rnd(2) - 1
+         gkw3_0_2 = iv_3_0_2
+         FLsetVal_i iv_3_0_2, giww3_0_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_1_2 = rnd(2) - 1
+         gkw3_1_2 = iv_3_1_2
+         FLsetVal_i iv_3_1_2, giww3_1_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_2_2 = rnd(2) - 1
+         gkw3_2_2 = iv_3_2_2
+         FLsetVal_i iv_3_2_2, giww3_2_2
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_3_3_2 = rnd(2) - 1
+         gkw3_3_2 = iv_3_3_2
+         FLsetVal_i iv_3_3_2, giww3_3_2
+      endif
+       
+   
+
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_4_0_0 = rnd(2) - 1
+         gkw4_0_0 = iv_4_0_0
+         FLsetVal_i iv_4_0_0, giww4_0_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_4_1_0 = rnd(2) - 1
+         gkw4_1_0 = iv_4_1_0
+         FLsetVal_i iv_4_1_0, giww4_1_0
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_4_2_0 = rnd(2) - 1
+         gkw4_2_0 = iv_4_2_0
+         FLsetVal_i iv_4_2_0, giww4_2_0
+      endif
+       
+   
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_4_0_1 = rnd(2) - 1
+         gkw4_0_1 = iv_4_0_1
+         FLsetVal_i iv_4_0_1, giww4_0_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_4_1_1 = rnd(2) - 1
+         gkw4_1_1 = iv_4_1_1
+         FLsetVal_i iv_4_1_1, giww4_1_1
+      endif
+      
+      ichoice = rnd(1)
+      if (ichoice > 1.0 - 1/(480)) then
+         iv_4_2_1 = rnd(2) - 1
+         gkw4_2_1 = iv_4_2_1
+         FLsetVal_i iv_4_2_1, giww4_2_1
+      endif
+       
+   
+
+
+      p3 = 0
 endin
 
 
@@ -406,43 +1581,269 @@ instr 800 ;;;; scale
 
    
        
+      iv_1_0_0 = iscale*i(gkw1_0_0)
+      gkw1_0_0 = iv_1_0_0
+      FLsetVal_i iv_1_0_0, giww1_0_0
+       
+      iv_1_1_0 = iscale*i(gkw1_1_0)
+      gkw1_1_0 = iv_1_1_0
+      FLsetVal_i iv_1_1_0, giww1_1_0
+       
+      iv_1_2_0 = iscale*i(gkw1_2_0)
+      gkw1_2_0 = iv_1_2_0
+      FLsetVal_i iv_1_2_0, giww1_2_0
+       
+      iv_1_3_0 = iscale*i(gkw1_3_0)
+      gkw1_3_0 = iv_1_3_0
+      FLsetVal_i iv_1_3_0, giww1_3_0
+       
    
+       
+      iv_1_0_1 = iscale*i(gkw1_0_1)
+      gkw1_0_1 = iv_1_0_1
+      FLsetVal_i iv_1_0_1, giww1_0_1
+       
+      iv_1_1_1 = iscale*i(gkw1_1_1)
+      gkw1_1_1 = iv_1_1_1
+      FLsetVal_i iv_1_1_1, giww1_1_1
+       
+      iv_1_2_1 = iscale*i(gkw1_2_1)
+      gkw1_2_1 = iv_1_2_1
+      FLsetVal_i iv_1_2_1, giww1_2_1
+       
+      iv_1_3_1 = iscale*i(gkw1_3_1)
+      gkw1_3_1 = iv_1_3_1
+      FLsetVal_i iv_1_3_1, giww1_3_1
+       
+   
+       
+      iv_1_0_2 = iscale*i(gkw1_0_2)
+      gkw1_0_2 = iv_1_0_2
+      FLsetVal_i iv_1_0_2, giww1_0_2
+       
+      iv_1_1_2 = iscale*i(gkw1_1_2)
+      gkw1_1_2 = iv_1_1_2
+      FLsetVal_i iv_1_1_2, giww1_1_2
+       
+      iv_1_2_2 = iscale*i(gkw1_2_2)
+      gkw1_2_2 = iv_1_2_2
+      FLsetVal_i iv_1_2_2, giww1_2_2
+       
+      iv_1_3_2 = iscale*i(gkw1_3_2)
+      gkw1_3_2 = iv_1_3_2
+      FLsetVal_i iv_1_3_2, giww1_3_2
+       
+   
+       
+      iv_1_0_3 = iscale*i(gkw1_0_3)
+      gkw1_0_3 = iv_1_0_3
+      FLsetVal_i iv_1_0_3, giww1_0_3
+       
+      iv_1_1_3 = iscale*i(gkw1_1_3)
+      gkw1_1_3 = iv_1_1_3
+      FLsetVal_i iv_1_1_3, giww1_1_3
+       
+      iv_1_2_3 = iscale*i(gkw1_2_3)
+      gkw1_2_3 = iv_1_2_3
+      FLsetVal_i iv_1_2_3, giww1_2_3
+       
+      iv_1_3_3 = iscale*i(gkw1_3_3)
+      gkw1_3_3 = iv_1_3_3
+      FLsetVal_i iv_1_3_3, giww1_3_3
+       
+   
+       
+      iv_1_0_4 = iscale*i(gkw1_0_4)
+      gkw1_0_4 = iv_1_0_4
+      FLsetVal_i iv_1_0_4, giww1_0_4
+       
+      iv_1_1_4 = iscale*i(gkw1_1_4)
+      gkw1_1_4 = iv_1_1_4
+      FLsetVal_i iv_1_1_4, giww1_1_4
+       
+      iv_1_2_4 = iscale*i(gkw1_2_4)
+      gkw1_2_4 = iv_1_2_4
+      FLsetVal_i iv_1_2_4, giww1_2_4
+       
+      iv_1_3_4 = iscale*i(gkw1_3_4)
+      gkw1_3_4 = iv_1_3_4
+      FLsetVal_i iv_1_3_4, giww1_3_4
        
    
 
    
        
+      iv_2_0_0 = iscale*i(gkw2_0_0)
+      gkw2_0_0 = iv_2_0_0
+      FLsetVal_i iv_2_0_0, giww2_0_0
+       
+      iv_2_1_0 = iscale*i(gkw2_1_0)
+      gkw2_1_0 = iv_2_1_0
+      FLsetVal_i iv_2_1_0, giww2_1_0
+       
+      iv_2_2_0 = iscale*i(gkw2_2_0)
+      gkw2_2_0 = iv_2_2_0
+      FLsetVal_i iv_2_2_0, giww2_2_0
+       
+      iv_2_3_0 = iscale*i(gkw2_3_0)
+      gkw2_3_0 = iv_2_3_0
+      FLsetVal_i iv_2_3_0, giww2_3_0
+       
+      iv_2_4_0 = iscale*i(gkw2_4_0)
+      gkw2_4_0 = iv_2_4_0
+      FLsetVal_i iv_2_4_0, giww2_4_0
+       
    
+       
+      iv_2_0_1 = iscale*i(gkw2_0_1)
+      gkw2_0_1 = iv_2_0_1
+      FLsetVal_i iv_2_0_1, giww2_0_1
+       
+      iv_2_1_1 = iscale*i(gkw2_1_1)
+      gkw2_1_1 = iv_2_1_1
+      FLsetVal_i iv_2_1_1, giww2_1_1
+       
+      iv_2_2_1 = iscale*i(gkw2_2_1)
+      gkw2_2_1 = iv_2_2_1
+      FLsetVal_i iv_2_2_1, giww2_2_1
+       
+      iv_2_3_1 = iscale*i(gkw2_3_1)
+      gkw2_3_1 = iv_2_3_1
+      FLsetVal_i iv_2_3_1, giww2_3_1
+       
+      iv_2_4_1 = iscale*i(gkw2_4_1)
+      gkw2_4_1 = iv_2_4_1
+      FLsetVal_i iv_2_4_1, giww2_4_1
+       
+   
+       
+      iv_2_0_2 = iscale*i(gkw2_0_2)
+      gkw2_0_2 = iv_2_0_2
+      FLsetVal_i iv_2_0_2, giww2_0_2
+       
+      iv_2_1_2 = iscale*i(gkw2_1_2)
+      gkw2_1_2 = iv_2_1_2
+      FLsetVal_i iv_2_1_2, giww2_1_2
+       
+      iv_2_2_2 = iscale*i(gkw2_2_2)
+      gkw2_2_2 = iv_2_2_2
+      FLsetVal_i iv_2_2_2, giww2_2_2
+       
+      iv_2_3_2 = iscale*i(gkw2_3_2)
+      gkw2_3_2 = iv_2_3_2
+      FLsetVal_i iv_2_3_2, giww2_3_2
+       
+      iv_2_4_2 = iscale*i(gkw2_4_2)
+      gkw2_4_2 = iv_2_4_2
+      FLsetVal_i iv_2_4_2, giww2_4_2
+       
+   
+       
+      iv_2_0_3 = iscale*i(gkw2_0_3)
+      gkw2_0_3 = iv_2_0_3
+      FLsetVal_i iv_2_0_3, giww2_0_3
+       
+      iv_2_1_3 = iscale*i(gkw2_1_3)
+      gkw2_1_3 = iv_2_1_3
+      FLsetVal_i iv_2_1_3, giww2_1_3
+       
+      iv_2_2_3 = iscale*i(gkw2_2_3)
+      gkw2_2_3 = iv_2_2_3
+      FLsetVal_i iv_2_2_3, giww2_2_3
+       
+      iv_2_3_3 = iscale*i(gkw2_3_3)
+      gkw2_3_3 = iv_2_3_3
+      FLsetVal_i iv_2_3_3, giww2_3_3
+       
+      iv_2_4_3 = iscale*i(gkw2_4_3)
+      gkw2_4_3 = iv_2_4_3
+      FLsetVal_i iv_2_4_3, giww2_4_3
        
    
 
    
        
+      iv_3_0_0 = iscale*i(gkw3_0_0)
+      gkw3_0_0 = iv_3_0_0
+      FLsetVal_i iv_3_0_0, giww3_0_0
+       
+      iv_3_1_0 = iscale*i(gkw3_1_0)
+      gkw3_1_0 = iv_3_1_0
+      FLsetVal_i iv_3_1_0, giww3_1_0
+       
+      iv_3_2_0 = iscale*i(gkw3_2_0)
+      gkw3_2_0 = iv_3_2_0
+      FLsetVal_i iv_3_2_0, giww3_2_0
+       
+      iv_3_3_0 = iscale*i(gkw3_3_0)
+      gkw3_3_0 = iv_3_3_0
+      FLsetVal_i iv_3_3_0, giww3_3_0
+       
    
+       
+      iv_3_0_1 = iscale*i(gkw3_0_1)
+      gkw3_0_1 = iv_3_0_1
+      FLsetVal_i iv_3_0_1, giww3_0_1
+       
+      iv_3_1_1 = iscale*i(gkw3_1_1)
+      gkw3_1_1 = iv_3_1_1
+      FLsetVal_i iv_3_1_1, giww3_1_1
+       
+      iv_3_2_1 = iscale*i(gkw3_2_1)
+      gkw3_2_1 = iv_3_2_1
+      FLsetVal_i iv_3_2_1, giww3_2_1
+       
+      iv_3_3_1 = iscale*i(gkw3_3_1)
+      gkw3_3_1 = iv_3_3_1
+      FLsetVal_i iv_3_3_1, giww3_3_1
+       
+   
+       
+      iv_3_0_2 = iscale*i(gkw3_0_2)
+      gkw3_0_2 = iv_3_0_2
+      FLsetVal_i iv_3_0_2, giww3_0_2
+       
+      iv_3_1_2 = iscale*i(gkw3_1_2)
+      gkw3_1_2 = iv_3_1_2
+      FLsetVal_i iv_3_1_2, giww3_1_2
+       
+      iv_3_2_2 = iscale*i(gkw3_2_2)
+      gkw3_2_2 = iv_3_2_2
+      FLsetVal_i iv_3_2_2, giww3_2_2
+       
+      iv_3_3_2 = iscale*i(gkw3_3_2)
+      gkw3_3_2 = iv_3_3_2
+      FLsetVal_i iv_3_3_2, giww3_3_2
        
    
 
    
        
-   
+      iv_4_0_0 = iscale*i(gkw4_0_0)
+      gkw4_0_0 = iv_4_0_0
+      FLsetVal_i iv_4_0_0, giww4_0_0
+       
+      iv_4_1_0 = iscale*i(gkw4_1_0)
+      gkw4_1_0 = iv_4_1_0
+      FLsetVal_i iv_4_1_0, giww4_1_0
+       
+      iv_4_2_0 = iscale*i(gkw4_2_0)
+      gkw4_2_0 = iv_4_2_0
+      FLsetVal_i iv_4_2_0, giww4_2_0
        
    
-
-   
        
-   
+      iv_4_0_1 = iscale*i(gkw4_0_1)
+      gkw4_0_1 = iv_4_0_1
+      FLsetVal_i iv_4_0_1, giww4_0_1
        
-   
-
-   
+      iv_4_1_1 = iscale*i(gkw4_1_1)
+      gkw4_1_1 = iv_4_1_1
+      FLsetVal_i iv_4_1_1, giww4_1_1
        
-   
-       
-   
-
-   
-       
-   
+      iv_4_2_1 = iscale*i(gkw4_2_1)
+      gkw4_2_1 = iv_4_2_1
+      FLsetVal_i iv_4_2_1, giww4_2_1
        
    
 
@@ -456,7 +1857,93 @@ instr 701 ;;;;
 
    
        
+      iv_1_0_0 = rnd(2) - 1
+      gkw1_0_0 = iv_1_0_0
+      FLsetVal_i iv_1_0_0, giww1_0_0
+       
+      iv_1_1_0 = rnd(2) - 1
+      gkw1_1_0 = iv_1_1_0
+      FLsetVal_i iv_1_1_0, giww1_1_0
+       
+      iv_1_2_0 = rnd(2) - 1
+      gkw1_2_0 = iv_1_2_0
+      FLsetVal_i iv_1_2_0, giww1_2_0
+       
+      iv_1_3_0 = rnd(2) - 1
+      gkw1_3_0 = iv_1_3_0
+      FLsetVal_i iv_1_3_0, giww1_3_0
+       
    
+       
+      iv_1_0_1 = rnd(2) - 1
+      gkw1_0_1 = iv_1_0_1
+      FLsetVal_i iv_1_0_1, giww1_0_1
+       
+      iv_1_1_1 = rnd(2) - 1
+      gkw1_1_1 = iv_1_1_1
+      FLsetVal_i iv_1_1_1, giww1_1_1
+       
+      iv_1_2_1 = rnd(2) - 1
+      gkw1_2_1 = iv_1_2_1
+      FLsetVal_i iv_1_2_1, giww1_2_1
+       
+      iv_1_3_1 = rnd(2) - 1
+      gkw1_3_1 = iv_1_3_1
+      FLsetVal_i iv_1_3_1, giww1_3_1
+       
+   
+       
+      iv_1_0_2 = rnd(2) - 1
+      gkw1_0_2 = iv_1_0_2
+      FLsetVal_i iv_1_0_2, giww1_0_2
+       
+      iv_1_1_2 = rnd(2) - 1
+      gkw1_1_2 = iv_1_1_2
+      FLsetVal_i iv_1_1_2, giww1_1_2
+       
+      iv_1_2_2 = rnd(2) - 1
+      gkw1_2_2 = iv_1_2_2
+      FLsetVal_i iv_1_2_2, giww1_2_2
+       
+      iv_1_3_2 = rnd(2) - 1
+      gkw1_3_2 = iv_1_3_2
+      FLsetVal_i iv_1_3_2, giww1_3_2
+       
+   
+       
+      iv_1_0_3 = rnd(2) - 1
+      gkw1_0_3 = iv_1_0_3
+      FLsetVal_i iv_1_0_3, giww1_0_3
+       
+      iv_1_1_3 = rnd(2) - 1
+      gkw1_1_3 = iv_1_1_3
+      FLsetVal_i iv_1_1_3, giww1_1_3
+       
+      iv_1_2_3 = rnd(2) - 1
+      gkw1_2_3 = iv_1_2_3
+      FLsetVal_i iv_1_2_3, giww1_2_3
+       
+      iv_1_3_3 = rnd(2) - 1
+      gkw1_3_3 = iv_1_3_3
+      FLsetVal_i iv_1_3_3, giww1_3_3
+       
+   
+       
+      iv_1_0_4 = rnd(2) - 1
+      gkw1_0_4 = iv_1_0_4
+      FLsetVal_i iv_1_0_4, giww1_0_4
+       
+      iv_1_1_4 = rnd(2) - 1
+      gkw1_1_4 = iv_1_1_4
+      FLsetVal_i iv_1_1_4, giww1_1_4
+       
+      iv_1_2_4 = rnd(2) - 1
+      gkw1_2_4 = iv_1_2_4
+      FLsetVal_i iv_1_2_4, giww1_2_4
+       
+      iv_1_3_4 = rnd(2) - 1
+      gkw1_3_4 = iv_1_3_4
+      FLsetVal_i iv_1_3_4, giww1_3_4
        
    
 
@@ -468,7 +1955,91 @@ instr 702 ;;;;
 
    
        
+      iv_2_0_0 = rnd(2) - 1
+      gkw2_0_0 = iv_2_0_0
+      FLsetVal_i iv_2_0_0, giww2_0_0
+       
+      iv_2_1_0 = rnd(2) - 1
+      gkw2_1_0 = iv_2_1_0
+      FLsetVal_i iv_2_1_0, giww2_1_0
+       
+      iv_2_2_0 = rnd(2) - 1
+      gkw2_2_0 = iv_2_2_0
+      FLsetVal_i iv_2_2_0, giww2_2_0
+       
+      iv_2_3_0 = rnd(2) - 1
+      gkw2_3_0 = iv_2_3_0
+      FLsetVal_i iv_2_3_0, giww2_3_0
+       
+      iv_2_4_0 = rnd(2) - 1
+      gkw2_4_0 = iv_2_4_0
+      FLsetVal_i iv_2_4_0, giww2_4_0
+       
    
+       
+      iv_2_0_1 = rnd(2) - 1
+      gkw2_0_1 = iv_2_0_1
+      FLsetVal_i iv_2_0_1, giww2_0_1
+       
+      iv_2_1_1 = rnd(2) - 1
+      gkw2_1_1 = iv_2_1_1
+      FLsetVal_i iv_2_1_1, giww2_1_1
+       
+      iv_2_2_1 = rnd(2) - 1
+      gkw2_2_1 = iv_2_2_1
+      FLsetVal_i iv_2_2_1, giww2_2_1
+       
+      iv_2_3_1 = rnd(2) - 1
+      gkw2_3_1 = iv_2_3_1
+      FLsetVal_i iv_2_3_1, giww2_3_1
+       
+      iv_2_4_1 = rnd(2) - 1
+      gkw2_4_1 = iv_2_4_1
+      FLsetVal_i iv_2_4_1, giww2_4_1
+       
+   
+       
+      iv_2_0_2 = rnd(2) - 1
+      gkw2_0_2 = iv_2_0_2
+      FLsetVal_i iv_2_0_2, giww2_0_2
+       
+      iv_2_1_2 = rnd(2) - 1
+      gkw2_1_2 = iv_2_1_2
+      FLsetVal_i iv_2_1_2, giww2_1_2
+       
+      iv_2_2_2 = rnd(2) - 1
+      gkw2_2_2 = iv_2_2_2
+      FLsetVal_i iv_2_2_2, giww2_2_2
+       
+      iv_2_3_2 = rnd(2) - 1
+      gkw2_3_2 = iv_2_3_2
+      FLsetVal_i iv_2_3_2, giww2_3_2
+       
+      iv_2_4_2 = rnd(2) - 1
+      gkw2_4_2 = iv_2_4_2
+      FLsetVal_i iv_2_4_2, giww2_4_2
+       
+   
+       
+      iv_2_0_3 = rnd(2) - 1
+      gkw2_0_3 = iv_2_0_3
+      FLsetVal_i iv_2_0_3, giww2_0_3
+       
+      iv_2_1_3 = rnd(2) - 1
+      gkw2_1_3 = iv_2_1_3
+      FLsetVal_i iv_2_1_3, giww2_1_3
+       
+      iv_2_2_3 = rnd(2) - 1
+      gkw2_2_3 = iv_2_2_3
+      FLsetVal_i iv_2_2_3, giww2_2_3
+       
+      iv_2_3_3 = rnd(2) - 1
+      gkw2_3_3 = iv_2_3_3
+      FLsetVal_i iv_2_3_3, giww2_3_3
+       
+      iv_2_4_3 = rnd(2) - 1
+      gkw2_4_3 = iv_2_4_3
+      FLsetVal_i iv_2_4_3, giww2_4_3
        
    
 
@@ -484,6 +2055,7 @@ t 0 60
 f 0 3600
 
 i 100 0 3600
+i 1 0 3600
 
 e
 </CsScore>

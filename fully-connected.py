@@ -18,7 +18,7 @@ template = env.get_template("fully-connected.csd.jinja2")
 
 inputs = 1
 outputs = 1
-neurons = 7
+neurons = 9
 base_neuron_id = 1
 neural_map = {}
 def base_neuron(inputs=None):

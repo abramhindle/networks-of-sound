@@ -1,7 +1,8 @@
 <CsoundSynthesizer>
+i 1 0 3600
 <CsOptions>
 ;-L stdin -odac           -iadc     -dm6    ;;;RT audio I/O
- -L stdin -odac           -iadc     -dm6  -+rtaudio=jack -+jack_client=csoundGrain  -b 1024 -B 2048   ;;;RT audio I/O
+ -L stdin -odac           -iadc     -dm6  -+rtaudio=jack -+jack_client=csoundFullyConnected  -b 1024 -B 2048   ;;;RT audio I/O
 ; For Non-realtime ouput leave only the line below:
 ; -o grain3.wav -W ;;; for file output any platform
 </CsOptions>
@@ -45,8 +46,12 @@ FLcolor	180,200,199
 ;;; layer 1
 ;;; w1_1
 
+gkSet init 0
+gkGet init 1
+gkShift init 0
 
-FLpanel "Network",500,{{n_neurons*50 + 15*n_params + 50}}
+;;; FLpanel "Network",500,{{n_neurons*50 + 15*n_params + 50}}
+FLpanel "FullyConnected",500,{{n_neurons*50 + 15*n_params + 150}}, -1, -1, 5, 1, 1
         imin = -4
         imax = 4
         islw = 500
@@ -58,18 +63,88 @@ FLpanel "Network",500,{{n_neurons*50 + 15*n_params + 50}}
    gkw{{control[1]}}_{{control[0]}}, giww{{control[1]}}_{{control[0]}} FLslider "{{control[1]}}_{{control[0]}}", imin, imax, 0, itype, -1, islw, islh, 0, ioff*{{loop.index}}
 {% endfor %}
 
-   kbz, ibz FLbutton "0"      ,    1, 0, 1, 50, 50,   0, ibl, 105, 1000, 0, kr/sr
-   kbz, ibz FLbutton "Random*",    1, 0, 1, 50, 50, 150, ibl, 105,  666, 0, kr/sr
-   kbz, ibz FLbutton "Random*[1]", 1, 0, 1, 50, 50, 200, ibl, 105,  667, 0, kr/sr
-   kbz, ibz FLbutton "90%"    ,    1, 0, 1, 50, 50, 250, ibl, 105,  800, 0, kr/sr, 0.9
-   kbz, ibz FLbutton "110%",       1, 0, 1, 50, 50, 300, ibl, 105,  800, 0, kr/sr, 1.1  
+   kbz, ibz FLbutton "0"      ,    1, 0, 11, 50, 50,   0, ibl, 105, 1000, 0, kr/sr
+   kbz, ibz FLbutton "Random*",    1, 0, 11, 50, 50, 150, ibl, 105,  666, 0, kr/sr
+   kbz, ibz FLbutton "Random*[1]", 1, 0, 11, 50, 50, 200, ibl, 105,  667, 0, kr/sr
+   kbz, ibz FLbutton "90%"    ,    1, 0, 11, 50, 50, 250, ibl, 105,  800, 0, kr/sr, 0.9
+   kbz, ibz FLbutton "110%",       1, 0, 11, 50, 50, 300, ibl, 105,  800, 0, kr/sr, 1.1  
 
-FLpanel_end	;***** end of container
+   kbz, ibz FLbutton "SAVE",       1, 0, 11, 50, 50, 350, ibl, 105,  6001, 0, 1.0
+   kbz, ibz FLbutton "LOAD",       1, 0, 11, 50, 50, 400, ibl, 105,  6000, 0, 1.0
+;; kout, ihandle FLbutBank itype, inumx, inumy, iwidth, iheight, ix, iy, \
+;;      iopcode [, kp1] [, kp2] [, kp3] [, kp4] [, kp5] [....] [, kpN]
+   gkGet,ih1	FLbutBank	11, 10,1,  500,50, 0,ibl+50   ,0,6000,0,kr/sr
+   gkSet,ih2	FLbutBank	11, 10,1,  500,50, 0,ibl+50+50,0,6001,0,kr/sr
+
+FLpanelEnd	;***** end of container
 
 FLrun		;***** runs the widget thread 
 
 instr 1
+kascii   FLkeyIn
+ktrig changed kascii
+if (kascii > 0) then
+  if (ktrig > 0 && kascii >= 481 && kascii <= 482) then
+    gkShift = 1
+  endif
+  if (ktrig > 0 && kascii >= 48 && kascii <= 57) then
+    if (gkShift > 0) then
+       printf "Set State: %i\n", ktrig, kascii
+       event "i", 6011, 0, 0, kascii - 48
+    else
+       printf "Get State: %i\n", ktrig, kascii
+       event "i", 6010, 0, 0, kascii - 48
+    endif
+  endif
+  if (ktrig > 0 && kascii == 114) then
+       event "i", 666, 0, 0
+  endif
+  if (ktrig > 0 && kascii == 116) then
+       event "i", 667, 0, 0
+  endif
+  if (ktrig > 0 && kascii == 91) then
+       event "i", 800, 0, 0, 0.9
+  endif
+  if (ktrig > 0 && kascii == 93) then
+       event "i", 800, 0, 0, 1.1
+  endif
+  printf "Key Down: %i\n", ktrig, kascii
+else
+  if (ktrig > 0 && kascii >= -482 && kascii <= -481) then
+    gkShift = 0
+  endif
+  printf "Key Up: %i\n", ktrig, -kascii
+endif
 endin
+
+
+gkSaved init 0
+gkLoad init 0
+
+
+	instr	6000
+	inumel	FLgetsnap	i(gkGet)
+        printf_i "GET SNAP %i\n", 1, i(gkGet)
+        printf_i "inumel %i \n", 1, inumel
+        endin
+	instr	6010
+        igkget = p4
+	inumel	FLgetsnap	igkget
+        printf_i "GET SNAP %i\n", 1, igkget
+        printf_i "inumel %i \n", 1, inumel
+        endin
+
+	instr	6001
+        printf_i "SET SNAP %i\n", 1, i(gkSet)
+	isnap, inumel	FLsetsnap i(gkSet)
+        printf_i "isnap inumel %i %i \n", 1, isnap, inumel
+        endin
+	instr	6011
+        igkset = p4
+        printf_i "SET SNAP %i\n", 1, igkset
+	isnap, inumel	FLsetsnap igkset
+        printf_i "isnap inumel %i %i \n", 1, isnap, inumel
+        endin
 
 instr 100
    ;;; get inputs
@@ -162,6 +237,7 @@ t 0 60
 f 0 3600
 
 i 100 0 3600
+i 1 0 3600
 
 e
 </CsScore>
